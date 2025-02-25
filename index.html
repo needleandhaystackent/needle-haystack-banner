@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Needle & Haystack Entertainment</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
         body {
             margin: 0;
             padding: 0;
@@ -34,30 +36,41 @@
             left: 50%;
             transform: translateX(-50%);
             width: 80%;
-            opacity: 0.7; /* Adjust transparency */
-            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2)); /* Soft shadow */
+            opacity: 0.8; /* Slight transparency */
+            filter: blur(3px) drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2)); /* Soft blur effect */
+            mask-image: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 90%);
+            -webkit-mask-image: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 90%);
         }
 
         .banner h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: #fff;
             margin: 0;
             z-index: 2;
+            position: absolute;
+            top: 10%; /* Moves the title higher */
+            font-weight: bold;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
         }
 
         .banner p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            font-family: 'Oswald', sans-serif; /* Modern font */
             color: #fff;
             margin: 10px 0;
             max-width: 600px;
             z-index: 2;
+            position: absolute;
+            top: 22%; /* Moves tagline higher */
+            font-weight: 400;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .cta-button {
             display: inline-block;
             margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 20px 40px; /* Bigger button */
+            font-size: 1.5rem;
             font-weight: bold;
             color: #fff;
             background: linear-gradient(to right, #c0c0c0, #808080);
@@ -65,13 +78,15 @@
             border-radius: 30px;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
             transition: 0.3s ease-in-out;
-            z-index: 2;
+            position: absolute;
+            bottom: 15%;
         }
 
         .cta-button:hover {
             background: linear-gradient(to right, #808080, #404040);
+            transform: scale(1.1); /* Button gets slightly bigger on hover */
         }
     </style>
 </head>
@@ -80,8 +95,8 @@
     <div class="banner">
         <h1>🎬 Welcome to Needle & Haystack Entertainment! 🎭</h1>
         <p>We connect top-tier talent with the biggest opportunities in the industry. Be the next star or find the perfect talent today!</p>
-        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button">Join the Database</a>
-        <img src="https://raw.githubusercontent.com/needleandhaystackent/needle-haystack-banner/refs/heads/main/Logo.jpeg" alt="Needle in a Haystack">
+        <a href="https://your-form-link.com" class="cta-button">Join the Database</a>
+        <img src="https://your-username.github.io/repository-name/your-image.png" alt="Needle in a Haystack">
     </div>
 
 </body>
