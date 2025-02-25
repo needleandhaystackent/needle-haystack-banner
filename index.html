@@ -21,20 +21,28 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(to bottom, #b8860b, #8b5a2b), 
-                        url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/Logo.jpeg?raw=true');
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
+            background: linear-gradient(to bottom, #b8860b, #8b5a2b);
             padding: 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner img {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            opacity: 0.7; /* Adjust transparency */
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2)); /* Soft shadow */
         }
 
         .banner h1 {
             font-size: 3rem;
             color: #fff;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 2;
         }
 
         .banner p {
@@ -42,6 +50,7 @@
             color: #fff;
             margin: 10px 0;
             max-width: 600px;
+            z-index: 2;
         }
 
         .cta-button {
@@ -58,6 +67,7 @@
             text-decoration: none;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: 0.3s ease-in-out;
+            z-index: 2;
         }
 
         .cta-button:hover {
@@ -71,6 +81,7 @@
         <h1>🎬 Welcome to Needle & Haystack Entertainment! 🎭</h1>
         <p>We connect top-tier talent with the biggest opportunities in the industry. Be the next star or find the perfect talent today!</p>
         <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button">Join the Database</a>
+        <img src="https://your-username.github.io/repository-name/your-image.png" alt="Needle in a Haystack">
     </div>
 
 </body>
