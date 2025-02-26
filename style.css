@@ -69,83 +69,79 @@ width: 100%;
 
     /* General Styling for All Star Elements */
 .star-text {
-    position: absolute;
-    text-align: center;
-    font-family: 'Pacifico', cursive; /* Modern cursive font */
+    font-size: 20px;
     color: black;
+    text-align: center;
     font-weight: bold;
+    width: 100%;
+    padding: 5px;
+    line-height: 1.3;
+}
+
+/* Ensuring all stars keep their natural shape */
+.dream, .categories, .message {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* Individual Star Styles */
-.dream, .categories, .message {
-    width: auto;
-    padding: 25px;
-    background-color: gold;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Keep height equal to width */
+    padding: 10px;
+    background: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    opacity: 0.85;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    font-size: 22px;
-    line-height: 1.4;
-}
-
-/* Unique Styling for .message Star - Adding Background Image */
-.message {
-    position: relative;
-}
-
-/* Add the Image Inside the .message Star */
-.message::before {
-    content: "";
-    background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle_haystackemoji_Message.png?raw=true'); /* Replace with your actual URL */
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 60px; /* Adjust size as needed */
-    height: 60px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
     position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-
-
-
-    
-/* Emoji Styling */
-.star-text .emoji {
-    font-size: 35px; /* Makes the emoji large */
-    display: block;
-    margin-bottom: 8px;
-}
-
-/* Hover Effect - Animate on Hover */
-.dream:hover, .categories:hover, .message:hover {
-    transform: scale(1.1);
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
-}
-
-/* Positioning Each Star */
+/* Specific positioning of stars */
 .dream {
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .categories {
-    top: 60%;
-    left: 30%;
+    top: 45%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
 
 .message {
-    top: 60%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    right: 35%;
+    transform: translate(50%, -50%);
+}
+
+/* Ensure text and emoji stay centered within stars */
+.dream p, .categories p, .message p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+    color: black;
+}
+
+/* Add an image inside the .message star */
+.message::before {
+    content: "";
+    background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle_haystackemoji_Message.png?raw=true'); /* Replace with the actual image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hover effect to add slight animation */
+.dream:hover, .categories:hover, .message:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 
