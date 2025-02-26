@@ -7,7 +7,7 @@ body {
 
 /* Title & Subtitle Styling */
 .title {
-    font-size: 50px;
+    font-size: 75px;
     font-weight: bold;
     text-transform: uppercase;
     color: black;
@@ -16,7 +16,7 @@ body {
 }
 
 .subtitle {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     color: gold;
@@ -40,7 +40,7 @@ body {
 
 /* Star Text */
 .star-text {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     color: black;
     text-align: center;
