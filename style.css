@@ -113,21 +113,21 @@ width: 100%;
     
 
 /* Specific positioning of stars */
-.dream {
-    top: 30%;
+.actor {
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.categories {
-    top: 45%;
-    left: 26%;
+.realitytv {
+    top: 38%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 
-.message {
-    top: 45%;
-    right: 26%;
+.gamehow {
+    top: 38%;
+    right: 30%;
     transform: translate(50%, -50%);
 }
 
