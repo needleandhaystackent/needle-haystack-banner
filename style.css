@@ -3,11 +3,11 @@ body {
     padding: 0;
     font-family: 'Helvetica', sans-serif;
     background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true') no-repeat center center;
-    background-size: contain; /* Adjusted to fit within one screen */
+    background-size: 100vw 100vh; /* Forces full width & height */
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-    height: 100vh; /* Prevents scrolling */
     overflow: hidden; /* Ensures full layout visibility */
 }
 
@@ -33,25 +33,15 @@ body {
 }
 
 .star-container {
-    position: relative;
-    display: inline-block;
-    width: 1000px;
-    height: 1000px;
-    background: gold;
-    opacity: 0.8;
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 
-        68% 57%, 79% 91%, 50% 70%, 
-        21% 91%, 32% 57%, 2% 35%, 
-        39% 35%
-    );
-    margin: 10px auto;
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; /* Adjusts size relative to viewport width */
+    height: auto;
+    background-color: rgba(255, 215, 0, 0.7); /* Gold with 70% opacity */
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .star-text p {
@@ -86,6 +76,7 @@ body {
 .cta-button {
     display: inline-block;
     background: #8a867d;
+    opacity: 1; /* Fully solid */
     color: #fafbf1;
     font-size: 22px;
     font-weight: bold;
@@ -99,7 +90,7 @@ body {
 }
 
 .cta-button:hover {
-    background: #bba429;
+    background: 030303;
     transform: scale(1.1);
 }
 
