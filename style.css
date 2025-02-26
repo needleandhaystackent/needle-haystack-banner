@@ -76,7 +76,7 @@ width: 100%;
     height: 300px; /* Ensures proportional size */
     background: radial-gradient(circle, rgba(255, 223, 0, 0.8) 40%, rgba(255, 191, 0, 0.6) 100%);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    display: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -87,8 +87,8 @@ width: 100%;
     text-align: center;
     padding: 10px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
-    animation: glowEffect 1.5s ease-in-out infinite alternate; /* Glowing effect */
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Adds a glow effect */
+    animation: glowEffect 2s ease-in-out infinite alternate, wiggle 1.5s infinate ease-in-out /* Glowing effect */
 }
 
 /* Soft Glow Animation on Page Load */
