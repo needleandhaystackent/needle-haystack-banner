@@ -40,8 +40,8 @@ body {
 
 /* Star Container */
 .star-container {
-    width: 600px; /* Adjust the size of the star */
-    height: 600px;
+    width: 400px; /* Adjust the size of the star */
+    height: 400px;
     background-color: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     display: flex;
@@ -50,7 +50,7 @@ body {
     font-weight: bold;
     opacity: 0.8;
     position: absolute;
-    top: 65%; /* Centers vertically */
+    top: 60%; /* Centers vertically */
     left: 50%; /* Centers horizontally */
     transform: translate(-50%, -50%); /* Perfect centering trick */
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
