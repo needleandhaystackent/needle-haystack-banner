@@ -5,102 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Needle and Haystack Entertainment</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
             text-align: center;
-            background-color: #F8F1DC;
-        }
-        .header {
-            width: 100%;
-            background-color: #FFD700;
-            padding: 15px 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .header a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
         }
         .banner {
-            background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/Logo.jpeg?raw=true') no-repeat center center;
-            background-size: cover;
-            height: 600px;
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/Logo.jpeg?raw=true') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #FFF;
-            padding: 20px;
-            margin-top: 80px; /* Adjusts for fixed header */
+            text-align: center;
         }
         .title {
-            font-size: 50px;
+            font-size: 3rem;
             font-weight: bold;
-            color: #FFD700;
-            text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.8);
+            color: gold;
+            text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+            margin-bottom: 10px;
         }
         .subtitle {
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: bold;
-            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+        .highlight-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
         }
         .italic-text {
-            font-size: 22px;
+            font-size: 1.5rem;
             font-style: italic;
-            margin-top: -5px;
-        }
-        .tagline {
-            font-size: 26px;
-            font-weight: bold;
-            margin-top: 20px;
+            opacity: 0.9;
         }
         .cta-button {
             display: inline-block;
+            margin-top: 20px;
             padding: 15px 30px;
-            background-color: #FFD700;
-            color: #000;
-            text-decoration: none;
-            font-size: 22px;
+            font-size: 1.5rem;
             font-weight: bold;
-            border-radius: 8px;
-            margin-top: 25px;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            color: white;
+            background: gold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .cta-button:hover {
-            background-color: #FFC107;
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.9);
+        }
+        .cta-button img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Header -->
-    <div class="header">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">How It Works</a>
-        <a href="#">Contact</a>
-        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank">Join Database</a>
-    </div>
-
-    <!-- Hero Banner -->
     <div class="banner">
-        <div class="title">Needle and Haystack</div>
-        <div class="subtitle">Entertainment</div>
-        <div class="subtitle">🎬 Dream of Being on TV? 🎤</div>
+        <div class="title">Needle and Haystack <br> Entertainment</div>
+        <div class="highlight-box">
+            <div class="subtitle">🎬 Dream of Being on TV? 🌟</div>
+        </div>
         <div class="italic-text">Whether it's acting, reality, or game shows...</div>
-        <div class="tagline">🌟 Life is a haystack, and you're the needle. And guess what? We just found you. 🌟</div>
-
-        <!-- CTA Button (Now Opens in a New Tab) -->
-        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" class="cta-button">Join Our Database 🔍</a>
+        <div class="subtitle">Life is a haystack... and you're the ✨ needle! ✨</div>
+        <div class="subtitle">And guess what? We just found you. 🎉</div>
+        
+        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" class="cta-button">
+            Join Our Database <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle-icon.png?raw=true" alt="needle icon">
+        </a>
     </div>
 
 </body>
