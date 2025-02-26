@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
 body {
     font-family: helvetica, sans-serif;
     text-align: center;
@@ -80,9 +83,11 @@ width: 100%;
 
 /* Ensuring all stars keep their natural shape */
 .dream, .categories, .message {
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
