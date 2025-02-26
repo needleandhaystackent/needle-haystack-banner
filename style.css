@@ -93,6 +93,29 @@ width: 100%;
     line-height: 1.4;
 }
 
+/* Unique Styling for .message Star - Adding Background Image */
+.message {
+    position: relative;
+}
+
+/* Add the Image Inside the .message Star */
+.message::before {
+    content: "";
+    background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle_haystackemoji_Message.png?raw=true'); /* Replace with your actual URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+    
 /* Emoji Styling */
 .star-text .emoji {
     font-size: 35px; /* Makes the emoji large */
