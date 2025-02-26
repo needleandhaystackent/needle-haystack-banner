@@ -6,6 +6,7 @@ body {
     background-size: 100% 100%; /* Ensures the image fully fills the banner without tiling */
     background-position: center center;
     background-repeat: no-repeat;
+    opacity: 0.8;
     width: 100%;
     height: 100vh; /* Adjusts the height to match the viewport */
     max-width: 1200px; /* Matches Google Sites width */
