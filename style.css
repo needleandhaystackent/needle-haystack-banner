@@ -1,14 +1,16 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica', sans-serif;
-    background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true') no-repeat center center;
-    background-size: 100vw 100vh; /* Forces full width & height */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #A9AAAE;
+    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
+    background-size: contain; /* This prevents stretching */
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
-    color: white;
-    overflow: hidden; /* Ensures full layout visibility */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
