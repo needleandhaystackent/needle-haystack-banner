@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #A9AAAE;
+    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Title & Subtitle Styling */
