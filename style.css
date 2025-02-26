@@ -115,21 +115,21 @@ width: 100%;
 
 /* 🌟 Actor Star (Top Center) */
 .actor {
-    top: 20%; /* Adjust to touch Needle and Haystack */
+    top: 10%; /* Adjust to touch Needle and Haystack */
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* 🎥 Reality TV Star (Left & Lower) */
 .realitytv {
-    top: 30%; /* Lower than Actor */
+    top: 20%; /* Lower than Actor */
     left: 30%;
     transform: translateX(-50%);
 }
 
 /* 🎮 Game Show Star (Right & Mirroring Reality TV) */
 .gameshow {
-    top: 30%; /* Same level as RealityTV */
+    top: 20%; /* Same level as RealityTV */
     left: 70%; /* Mirroring position */
     transform: translateX(-50%);
 }
