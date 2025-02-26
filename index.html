@@ -5,96 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Needle and Haystack Entertainment</title>
     <style>
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: black;
         }
+
         .banner {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 90vh;
             background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
         }
+
         .title {
             font-size: 4rem;
             font-weight: bold;
-            background: linear-gradient(to right, gold, silver);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            padding: 10px 20px;
+            color: gold;
+            text-shadow: 4px 4px 20px rgba(255, 215, 0, 0.9);
         }
-        .subtitle {
-            font-size: 1.8rem;
-            font-style: italic;
+
+        .entertainment {
+            font-size: 3rem;
+            font-weight: bold;
+            color: gold;
+            text-shadow: 4px 4px 20px rgba(255, 215, 0, 0.9);
             margin-top: -10px;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: inline-block;
-            padding: 8px 16px;
-            border-radius: 10px;
         }
-        .tagline {
+
+        .star-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background: rgba(255, 215, 0, 0.4);
+            padding: 20px;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            text-align: center;
+            color: black;
             font-size: 2rem;
             font-weight: bold;
-            background: radial-gradient(circle, gold, orange);
-            padding: 15px 30px;
-            border-radius: 20px;
-            margin: 20px 0;
-            display: inline-block;
+            text-shadow: none;
+            margin-top: 20px;
         }
+
+        .opaque-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            color: white;
+            font-size: 1.8rem;
+        }
+
         .cta-button {
             background: gold;
             color: black;
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
             padding: 15px 40px;
             border: none;
-            border-radius: 50px;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-        }
-        .cta-button:hover {
-            background: orange;
-        }
-        .cta-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-top: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .cta-icon {
-            width: 40px;
-            height: 40px;
+
+        .cta-button img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
         }
+
     </style>
 </head>
 <body>
 
     <div class="banner">
         <div class="title">Needle and Haystack</div>
-        <div class="title" style="font-size: 3.5rem;">Entertainment</div>
-        <div class="subtitle">Dream of being on TV?</div>
-        <div class="tagline">Life is a haystack, and you're the needle. ✨<br>Guess what? We just found you! 🎉</div>
+        <div class="entertainment">ENTERTAINMENT</div>
 
-        <div class="cta-container">
-            <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" class="cta-button">
-                Join Our Database
-                <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true" alt="Needle Icon" class="cta-icon">
-            </a>
+        <div class="star-container">
+            <p>Life is a haystack, and you're the needle.</p>
+            <p>✨ Guess what? We just found you! ✨</p>
         </div>
+
+        <div class="opaque-box">Dream of being on TV?</div>
+        <div class="opaque-box">Whether it's acting, reality, or game shows…</div>
+
+        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button">
+            Join Our Database
+            <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true" alt="Needle Icon">
+        </a>
+
     </div>
 
 </body>
