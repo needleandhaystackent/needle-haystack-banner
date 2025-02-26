@@ -66,31 +66,55 @@ width: 100%;
 }
 
 
-.dream {
-    font-size: 26px;
+/* General Styling for All Star Elements */
+.star-text {
+    position: absolute;
+    text-align: center;
+    font-family: 'Pacifico', cursive; /* Modern cursive font */
+    color: black;
     font-weight: bold;
-    color: red;
-    position: relative;
-    top: -20px; /* Moves it higher inside the star */
+
+
+}
+
+/* Individual Star Styles */
+.dream, .categories, .message {
+    width: auto;
+    padding: 20px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    opacity: 0.85;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect - Animate on Hover */
+.dream:hover, .categories:hover, .message:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Positioning Each Star */
+.dream {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .categories {
-    font-size: 18px;
-    color: black;
-    font-style: italic;
-    position: relative;
-    top: -15px; /* Moves closer to the dream text */
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
 }
 
 .message {
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-    text-shadow: 1px 1px 3px white;
-    position: relative;
-    top: -10px; /* Adjusts spacing */
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
 }
 
+
+    
 .cta-button {
     display: inline-block;
     background: #8a867d;
