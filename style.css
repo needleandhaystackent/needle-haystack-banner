@@ -91,8 +91,8 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px; /* Set a fixed width */
-    height: 250px; /* Keep height equal to width */
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Keep height equal to width */
     padding: 10px;
     background: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
@@ -110,13 +110,13 @@ width: 100%;
 
 .categories {
     top: 45%;
-    left: 35%;
+    left: 26%;
     transform: translate(-50%, -50%);
 }
 
 .message {
     top: 45%;
-    right: 35%;
+    right: 26%;
     transform: translate(50%, -50%);
 }
 
