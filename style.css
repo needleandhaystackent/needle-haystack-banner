@@ -21,3 +21,20 @@
     width: 100%;
     padding: 20px;
 }
+
+/* Styles for Needle and Haystack Entertainment */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px gold;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: gold;
+    text-shadow: 2px 2px 5px black;
+}
