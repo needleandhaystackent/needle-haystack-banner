@@ -9,82 +9,82 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
+
         body {
-            background-color: #000;
-            color: #fff;
+            font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #111;
+            color: white;
         }
+
         .banner {
             position: relative;
             width: 100%;
             height: 90vh;
-            background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/Logo.jpeg?raw=true') no-repeat center center/cover;
+            background: url('YOUR_IMAGE_URL_HERE') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 20px;
         }
-        .title {
+
+        .banner h1 {
             font-size: 3.5rem;
             font-weight: bold;
-            color: gold;
-            text-shadow: 4px 4px 20px rgba(255, 215, 0, 1);
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #FFD700, #FFB800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
             display: inline-block;
-            margin-bottom: 15px;
+            border-radius: 10px;
+            filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
         }
-        .subtitle {
-            font-size: 2rem;
-            font-weight: bold;
+
+        .subtext {
+            font-size: 1.4rem;
+            font-style: italic;
             color: white;
-            text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.9);
-            margin-bottom: 15px;
-        }
-        .highlight-box {
             background: rgba(0, 0, 0, 0.6);
             padding: 10px 20px;
             border-radius: 10px;
             display: inline-block;
+            margin-top: 15px;
         }
-        .italic-text {
+
+        .highlight-text {
             font-size: 1.8rem;
-            font-style: italic;
-            opacity: 0.9;
-            color: white;
-            text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold, 1px 1px 0 gold;
-        }
-        .outlined-text {
-            font-size: 2rem;
             font-weight: bold;
-            color: white;
-            text-shadow: -2px -2px 0 gold, 2px -2px 0 gold, -2px 2px 0 gold, 2px 2px 0 gold;
-            margin-bottom: 15px;
+            color: #FFD700;
+            text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8);
+            margin-top: 20px;
         }
+
         .cta-button {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px;
-            padding: 15px 35px;
-            font-size: 1.8rem;
-            font-weight: bold;
+            background: #FFD700;
             color: black;
-            background: white;
-            border: 3px solid gold;
-            border-radius: 8px;
+            padding: 15px 25px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.8);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.7);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 25px;
         }
+
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
             box-shadow: 0px 6px 15px rgba(255, 215, 0, 1);
         }
+
         .cta-button img {
             width: 30px;
             height: 30px;
@@ -95,16 +95,15 @@
 <body>
 
     <div class="banner">
-        <div class="title">Needle and Haystack <br> Entertainment</div>
-        <div class="highlight-box">
-            <div class="subtitle">🎬 Dream of Being on TV? 🌟</div>
-        </div>
-        <div class="italic-text">Whether it's acting, reality, or game shows...</div>
-        <div class="outlined-text">Life is a haystack... and you're the ✨ needle! ✨</div>
-        <div class="outlined-text">And guess what? We just found you. 🎉</div>
+        <h1>Needle and Haystack Entertainment</h1>
+        <p class="subtext">🎭 Dream of being on TV? 🎬</p>
+        <p class="highlight-text">Whether it's Acting, Reality, or Game Shows...</p>
+        <p class="highlight-text">Life is a Haystack and You're the Needle.</p>
+        <p class="highlight-text">Guess What? 🎉 We Just Found You!</p>
         
-        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" class="cta-button">
-            Join Our Database <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle-icon.png?raw=true" alt="Needle Icon">
+        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button" target="_blank">
+            Join Our Database 
+            <img src="YOUR_NEEDLE_ICON_URL_HERE" alt="Needle Icon">
         </a>
     </div>
 
