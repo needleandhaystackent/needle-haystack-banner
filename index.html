@@ -8,89 +8,121 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000;
+            font-family: "Bebas Neue", sans-serif;
+            background-color: black;
+            color: white;
             text-align: center;
-            font-family: Arial, sans-serif;
         }
+
         .banner {
             position: relative;
             width: 100%;
-            height: 100vh;
-            background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true') no-repeat center center;
-            background-size: cover;
+            height: 500px; /* Ensuring the banner has space for everything */
+            background: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        /* Title: Needle and Haystack Entertainment */
+        .banner-title {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black; /* Black fill */
+            text-shadow: -3px -3px 0 #FFD700, 3px -3px 0 #FFD700, -3px 3px 0 #FFD700, 3px 3px 0 #FFD700; /* Gold border */
+            margin-bottom: -10px; /* Reduce spacing */
+        }
+
+        /* Entertainment moved below */
+        .banner-subtitle {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            text-shadow: -2px -2px 0 #FFD700, 2px -2px 0 #FFD700, -2px 2px 0 #FFD700, 2px 2px 0 #FFD700; /* Gold border */
+            margin-top: 0px;
+        }
+
+        /* Large Star Shape for Subtitles */
+        .star-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-       
-        .star-shape {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 900px; /* Increased */
-            height: 900px; /* Increased */
-            background: rgba(255, 215, 0, 0.7);
+            background: rgba(255, 215, 0, 0.7); /* Transparent gold star */
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px; /* Adjusted */
-            font-size: 28px; /* Enlarged text */
-            font-weight: bold;
-            color: white;
+            padding: 30px;
         }
-        .title {
-            font-size: 70px;
-            font-weight: bold;
-            text-align: center;
-            color: ##121314;
-            font-family: "Bebas Neue", sans-serif; /* Modern, sleek font */
-            text-shadow: 5px 5px 15px rgba(255, 215, 0, 0.8); /* Strong golden glow */
-            letter-spacing: 2px; /* Adds spacing for boldness */
-        }
-        .subtitle {
-            font-size: 20px;
-            font-style: italic;
-            color: #FFF;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
+
+        .star-text {
             font-size: 22px;
             font-weight: bold;
             color: black;
-            background: #FFD700;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFD700;
+            color: black;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
             text-decoration: none;
-            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            border: 3px solid black;
         }
+
         .cta-button:hover {
-            background: #FFC107;
-            transform: scale(1.1);
+            background-color: white;
+            color: black;
+            border: 3px solid gold;
         }
+
+        /* CTA Button Image (Needle Icon) */
         .cta-button img {
-            width: 20px;
+            width: 30px;
+            height: 30px;
             margin-left: 10px;
         }
     </style>
 </head>
 <body>
+
     <div class="banner">
+        <!-- Title -->
+        <div class="banner-title">Needle and Haystack</div>
+        <div class="banner-subtitle">Entertainment</div>
+
+        <!-- Star Shape with Subtitles -->
         <div class="star-container">
-            <div class="title">Needle and Haystack Entertainment</div>
-            <div class="subtitle">Dream of Being on TV?</div>
-            <div class="subtitle">Whether it’s acting, reality, or game shows.</div>
-            <p>Life is a haystack, and you're the needle.<br>Guess what? We just found you! ⭐</p>
-            <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" class="cta-button">
-                Join Our Database
-                <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true" alt="Needle Icon">
-            </a>
+            <div class="star-text">
+                🌟 Dream of Being on TV? 🌟 <br>
+                <em>Whether it's acting, reality, or game shows...</em> <br><br>
+                Life is a haystack and <strong>YOU</strong> are the needle. <br> 
+                🎯 Guess what? We just found you! 🎯
+            </div>
         </div>
+
+        <!-- Call to Action Button -->
+        <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button">
+            Join Our Database 
+            <img src="https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/needle-icon.png?raw=true" alt="Needle Icon">
+        </a>
     </div>
+
 </body>
 </html>
