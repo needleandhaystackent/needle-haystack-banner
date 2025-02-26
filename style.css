@@ -66,26 +66,38 @@ width: 100%;
 }
 
 
-/* General Styling for All Star Elements */
+
+    /* General Styling for All Star Elements */
 .star-text {
     position: absolute;
     text-align: center;
     font-family: 'Pacifico', cursive; /* Modern cursive font */
     color: black;
     font-weight: bold;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Individual Star Styles */
 .dream, .categories, .message {
     width: auto;
-    padding: 20px;
+    padding: 25px;
     background-color: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     opacity: 0.85;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+/* Emoji Styling */
+.star-text .emoji {
+    font-size: 35px; /* Makes the emoji large */
+    display: block;
+    margin-bottom: 8px;
 }
 
 /* Hover Effect - Animate on Hover */
