@@ -12,9 +12,15 @@ body {
     margin: auto; /* Centers everything */
 }
 
+/* Banner Styling */
 .banner {
-    position: relative;
-    padding: 30px 0;
+    position: relative;  /* Ensures child elements (like the star) can be positioned inside */
+    width: 100%;         /* Matches the site width */
+    height: 800px;       /* Adjust height to fit content */
+    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title {
