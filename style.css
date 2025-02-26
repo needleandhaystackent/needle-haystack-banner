@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #A9AAAE;
 }
 
 /* Title & Subtitle Styling */
@@ -26,8 +26,8 @@ body {
 
 /* Star Container */
 .star-container {
-    width: 400px;
-    height: 400px;
+    width: 1500px;
+    height: 1500px;
     background-color: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     display: flex;
@@ -40,7 +40,7 @@ body {
 
 /* Star Text */
 .star-text {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -54,13 +54,13 @@ body {
 
 /* Call to Action Button */
 .cta-container {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .cta-button {
     background-color: black;
     color: gold;
-    font-size: 20px;
+    font-size: 25px;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 8px;
@@ -77,6 +77,6 @@ body {
 
 /* Call to Action Icon */
 .cta-icon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
