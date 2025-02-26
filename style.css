@@ -103,7 +103,7 @@ width: 100%;
 
 /* Specific positioning of stars */
 .dream {
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -138,15 +138,22 @@ width: 100%;
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* Hover effect to add slight animation */
+@keyframes teeterTotter {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
 .dream:hover, .categories:hover, .message:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+    animation: teeterTotter 0.4s ease-in-out infinite;
 }
 
 
