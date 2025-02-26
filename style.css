@@ -3,14 +3,13 @@ body {
     text-align: center;
     background-color: #A9AAAE;
     background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
-    background-size: contain; /* This prevents stretching */
-    background-position: center;
+    background-size: cover; /* Ensures the image fills the section without stretching */
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100vh; /* Sets the image to full height of viewport */
+    max-width: 1200px; /* Ensures it fits within Google Sites default width */
+    margin: auto; /* Centers it horizontally */
 }
 
 .banner {
