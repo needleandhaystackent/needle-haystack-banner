@@ -29,11 +29,12 @@
             font-weight: bold;
             text-transform: uppercase;
             text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+            margin-bottom: -5px; /* Adjusted to move Entertainment lower */
         }
         .subtitle {
             font-size: 1.5rem;
             font-style: italic;
-            margin-top: -10px;
+            margin-top: 5px;
             color: #f4c842;
         }
         .main-text {
@@ -58,21 +59,31 @@
             text-transform: uppercase;
             box-shadow: 2px 2px 15px rgba(255, 215, 0, 0.5);
             transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
         .cta-button:hover {
             background: linear-gradient(to right, #ffd700, #ffcc00);
             transform: scale(1.1);
+        }
+        .needle-icon {
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
 
     <div class="banner">
-        <div class="title">Needle and Haystack Entertainment</div>
+        <div class="title">Needle and Haystack</div>
+        <div class="title">Entertainment</div>
         <div class="subtitle">🎬 *Dream of being on TV?* 🎬</div>
         <div class="main-text">🔥 Life is a haystack… but **YOU** are the needle. ✨</div>
-        <div class="subtitle">🚀 And guess what? We just found you.</div>
-        <button class="cta-button" onclick="window.location.href='https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form'">Join the Database</button>
+        <div class="subtitle">And guess what? We just found you.</div>
+        <button class="cta-button" onclick="window.location.href='https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form'">
+            Join Our Database <span class="needle-icon">🪡</span>
+        </button>
     </div>
 
 </body>
