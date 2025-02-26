@@ -40,27 +40,33 @@ width: 100%;
     margin-top: 20px; /* Moves it closer to the title */
 }
 
-/* Star Container */
-.star-container {
-    width: 550px; /* Adjust the size of the star */
-    height: 550px;
+    /* Right Star */
+.right-star {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
     background-color: gold;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    opacity: 0.8;
     position: absolute;
-    top: 60%; /* Centers vertically */
-    left: 50%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering trick */
+    top: 15%; /* Positioning at the top */
+    right: 5%; /* Pushes it towards the right side */
+    opacity: 0.9;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.star-text p {
-    margin: 5px 0;
+
+    /* Left Star - Mirrored */
+.left-star {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    top: 15%; /* Matches right star */
+    left: 5%; /* Pushes it towards the left side */
+    opacity: 0.9;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 .dream {
     font-size: 26px;
