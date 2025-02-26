@@ -37,12 +37,6 @@ width: 100%;
     margin-top: 20px;
 }
 
-.subtitle {
-    font-size: 40px;
-    color: black;
-    text-shadow: 2px 2px 8px gold;
-    margin-top: 20px; /* Moves it closer to the title */
-}
 
     /* Right Star */
 .right-star {
