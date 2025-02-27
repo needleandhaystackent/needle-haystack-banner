@@ -107,7 +107,8 @@ width: 100%;
 
 .star {
     animation: glow 2s infinite alternate ease-in-out;
-}
+}.star {
+    border: 2px solid red !important;
 }
 
     
