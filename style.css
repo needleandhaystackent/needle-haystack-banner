@@ -41,9 +41,9 @@ body {
         0px 0px 15px rgba(255, 215, 0, 0.7);
 
     position: absolute;
-    top: 5%;  /* Moves title closer to top */
+    top: 1%;  /* Moves title closer to top */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     text-align: center;
     white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
 }
@@ -51,6 +51,7 @@ body {
 
 /* Subtitle (Entertainment) Styling */
 .subtitle {
+    display: block; /* Ensures "Entertainment" appears below */
     font-size: 35px; /* Slightly smaller */
     font-weight: bold; /* Matches title weight */
     color: black; /* Change this color if needed */
@@ -60,6 +61,7 @@ body {
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
     text-align: center;
+    margin-top: 5px; /* Adjust the spacing */
 
     
 }
@@ -142,21 +144,21 @@ body {
 
 /* 🌟 Actor Star (Top Center) */
 .actor {
-    top: 10%; /* Adjust to touch Needle and Haystack */
+    top: 25%; /* Adjust to touch Needle and Haystack */
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* 🎥 Reality TV Star (Left & Lower) */
 .realitytv {
-    top: 20%; /* Lower than Actor */
+    top: 30%; /* Lower than Actor */
     left: 30%;
     transform: translateX(-50%);
 }
 
 /* 🎮 Game Show Star (Right & Mirroring Reality TV) */
 .gameshow {
-    top: 20%; /* Same level as RealityTV */
+    top: 30%; /* Same level as RealityTV */
     left: 70%; /* Mirroring position */
     transform: translateX(-50%);
 }
@@ -188,6 +190,6 @@ body {
 .cta-button:hover {
     background: gold; /* Turns gold on hover */
     color: black; /* Text turns black */
-    transform: scale(1.1); /* Button grows but stays centered */
+    transform: translate(-50%, -50%) scale(1.5); /* Grows but stays centered */
     box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
 }
