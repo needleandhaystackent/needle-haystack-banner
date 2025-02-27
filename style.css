@@ -23,6 +23,7 @@
     left: 0;
     width: 100%;
     height: 100vh; /* Uses the full height of the visible screen */
+    max-height: 800px
     overflow: hidden; /* Prevents any overflow that causes scrolling */
     opacity: 0.9;
     display: flex; /* Allows child elements to align */
