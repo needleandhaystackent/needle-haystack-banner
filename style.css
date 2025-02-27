@@ -25,7 +25,7 @@ body {
     opacity: 0.9;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Ensure content aligns to top */
+    align-items: flex-start; /* Ensure content aligns to top */
     justify-content: flex-start; /* Keeps content at the top */
 }
 
@@ -43,7 +43,7 @@ body {
     position: absolute;
     top: 5%;  /* Moves title closer to top */
     left: 50%;
-    transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
 }
@@ -51,7 +51,6 @@ body {
 
 /* Subtitle (Entertainment) Styling */
 .subtitle {
-    display: block; /* Ensures "Entertainment" is on a new line */
     font-size: 35px; /* Slightly smaller */
     font-weight: bold; /* Matches title weight */
     color: black; /* Change this color if needed */
@@ -178,7 +177,7 @@ body {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
     
     position: absolute;
-    top: 75%; /* Moves it 3/4 down the page */
+    top: 70%; /* Moves it 3/4 down the page */
     left: 50%;
     transform: translate(-50%, -50%); /* Ensures centering */
     
@@ -189,6 +188,6 @@ body {
 .cta-button:hover {
     background: gold; /* Turns gold on hover */
     color: black; /* Text turns black */
-    transform: translate(-50%, -50%) scale(1.1); /* Button grows but stays centered */
+    transform: scale(1.1); /* Button grows but stays centered */
     box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
 }
