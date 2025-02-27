@@ -92,7 +92,7 @@ width: 100%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     
 }
-    .stars-container .star {
+    .stars-container {
     animation: glow 1.5s infinite alternate;  
 }
 
