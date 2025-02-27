@@ -40,7 +40,7 @@ width: 100%;
 
 
     /* Right Star */
-.right-star {
+right-star {
     width: 100px;
     height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
@@ -63,7 +63,7 @@ width: 100%;
 
 
     /* Left Star - Mirrored */
-.left-star {
+left-star {
     width: 100px;
     height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
@@ -87,7 +87,7 @@ width: 100%;
 
 
     /* 3 Star Styling */
-.star {
+star {
     position: absolute;
     display: flex;
     align-items: center; /* Centers text horizontally */
@@ -117,21 +117,21 @@ width: 100%;
     
 
 /* 🌟 Actor Star (Top Center) */
-.actor {
+actor {
     top: 10%; /* Adjust to touch Needle and Haystack */
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* 🎥 Reality TV Star (Left & Lower) */
-.realitytv {
+realitytv {
     top: 20%; /* Lower than Actor */
     left: 30%;
     transform: translateX(-50%);
 }
 
 /* 🎮 Game Show Star (Right & Mirroring Reality TV) */
-.gameshow {
+gameshow {
     top: 20%; /* Same level as RealityTV */
     left: 70%; /* Mirroring position */
     transform: translateX(-50%);
