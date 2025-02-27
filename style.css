@@ -25,7 +25,7 @@ body {
     opacity: 0.9;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Ensure content aligns to top */
+    align-items: center; /* Ensure content aligns to top */
     justify-content: flex-start; /* Keeps content at the top */
 }
 
@@ -41,9 +41,9 @@ body {
         0px 0px 15px rgba(255, 215, 0, 0.7);
 
     position: absolute;
-    top: 1%;  /* Moves title closer to top */
+    top: 3%;  /* Moves title closer to top */
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     text-align: center;
     white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
 }
@@ -66,92 +66,59 @@ body {
     
 }
 
-    /* 🌟 Left Star */
-.left-star {
-    width: 200px
-    height: 200px
+/*  Left Star */
+.left-star, .right-star {
+    width: 80px
+    height: 80px
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                        2% 35%, 39% 35%);
     
     position: absolute;
     top: 2%; /* Move it higher */
-    left: 23%; /* Push more left */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold */
     border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
-/* 🌟 Right Star */
-.right-star {
-    width: 200px
-    height: 200px
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
-                       79% 91%, 50% 70%, 21% 91%, 32% 57%, 
-                       2% 35%, 39% 35%);
-    
-    position: absolute;
-    top: 2%; /* Matches left star */
-    left: auto; 
-    right: 23%; /* Mirror left star */
-    opacity: 0.9;
-    background: linear-gradient(145deg, #ffde59, #e6c200);
-    border: 3px solid rgba(255, 215, 0, 0.9);
-}
+/* Positioning for Left & Right Stars */
+.left-star { left: 5%; }
+.right-star { right: 5%; }
 
 
 
-    /* 3 Star Styling */
+/* All Stars (RealityTV, GameShow, Actor, Model/Host) */
 .star {
     position: absolute;
     display: flex;
-    align-items: center; /* Centers text horizontally */
-    justify-content: center; /* Centers text inside the star */
-    width: 300px;  /* Adjust to keep stars even */
-    height: 300px; /* Ensures proportional size */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 68% 57%, 
         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
         2% 35%, 39% 35%);
-    
     font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: bold;
-    text-align: center; /* Ensures text is centered */
-    color: #37383a;    
-    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
-    box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
-        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
-        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
+    text-align: center;
+    color: #37383a;
+    background: linear-gradient(145deg, #ffde59, #e6c200);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7),
+                -5px -5px 10px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
-    
+/* Positioning for Stars */
+.realitytv { top: 30%; left: 20%; transform: translateX(-50%); }
+.gameshow { top: 50%; left: 20%; transform: translateX(-50%); }
+.actor { top: 30%; right: 20%; transform: translateX(50%); }
+.model-host { top: 50%; right: 20%; transform: translateX(50%); }
 
-    
-
-/* 🌟 Actor Star (Top Center) */
-.actor {
-    top: 25%; /* Adjust to touch Needle and Haystack */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* 🎥 Reality TV Star (Left & Lower) */
-.realitytv {
-    top: 30%; /* Lower than Actor */
-    left: 30%;
-    transform: translateX(-50%);
-}
-
-/* 🎮 Game Show Star (Right & Mirroring Reality TV) */
-.gameshow {
-    top: 30%; /* Same level as RealityTV */
-    left: 70%; /* Mirroring position */
-    transform: translateX(-50%);
-}
 
 
 
