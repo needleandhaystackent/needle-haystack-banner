@@ -118,7 +118,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-align: center; /* Ensures text is centered */
-    color: #fcfcfc;    
+    color: #37383a;    
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
     box-shadow: 
         5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
