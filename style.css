@@ -51,8 +51,8 @@ width: 100%;
     top: 15%; /* Positioning at the top */
     right: 5%; /* Pushes it towards the right side */
     opacity: 0.9;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4),
-                inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
 }
 
 
@@ -66,8 +66,8 @@ width: 100%;
     top: 15%; /* Matches right star */
     left: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4),
-                inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
 }
 
 
@@ -91,8 +91,8 @@ width: 100%;
     font-weight: bold;
     text-align: center; /* Ensures text is centered */
     color: #fcfcfc;    
-}   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
-                -5px -5px 10px rgba(255, 255, 255, 0.6); /* Embossed effect */
+}   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
 
 
     
