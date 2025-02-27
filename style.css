@@ -41,15 +41,15 @@ width: 100%;
 
     /* Right Star */
 .right-star {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                        2% 35%, 39% 35%);
     
     position: absolute;
-    top: 8%; /* Matches right star */
-    right: 5%; /* Pushes it towards the left side */
+    top: 5%; /* Matches right star */
+    right: 2%; /* Pushes it towards the left side */
     transform: scale(0.7);
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
@@ -65,15 +65,15 @@ width: 100%;
 
     /* Left Star - Mirrored */
 .left-star {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     clip-path: polygon (50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                         2% 35%, 39% 35%);
     
     position: absolute;
-    top: 8%; /* Matches right star */
-    left: 5%; /* Pushes it towards the left side */
+    top: 5%; /* Matches right star */
+    left: 2%; /* Pushes it towards the left side */
     transform: scale(0.7);
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
