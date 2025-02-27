@@ -72,13 +72,13 @@ width: 100%;
 
     /* 3 Star Styling */
 .star {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
-    background: radial-gradient(circle at center, #ffcc00, #d4af37);
+    background: linear-gradient(145deg, #f7c948, #cfa020);
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 
         68% 57%, 79% 91%, 50% 70%, 
@@ -88,10 +88,21 @@ width: 100%;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-    color: black;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6), 
+                inset -2px -2px 4px rgba(0, 0, 0, 0.2), 
+                inset 2px 2px 4px rgba(255, 255, 255, 0.4);
+    transition: transform 0.2s ease-in-out;
+
+.star:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.8), 
+                inset -3px -3px 6px rgba(0, 0, 0, 0.3), 
+                inset 3px 3px 6px rgba(255, 255, 255, 0.5);    
 }    
+
+
+    
 
 /* 🌟 Actor Star (Top Center) */
 .actor {
