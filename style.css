@@ -36,6 +36,12 @@ width: 100%;
         3px 3px 6px rgba(0, 0, 0, 0.8), /* Bottom-right dark shadow */
         -3px -3px 6px rgba(255, 255, 255, 0.6), /* Top-left highlight */
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Subtle gold glow */
+
+    /* Add Positioning to Move It Up */
+    position: absolute;
+    top: 8%;  /* Moves title higher up */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
