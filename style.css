@@ -41,15 +41,15 @@ width: 100%;
 
     /* Right Star */
 .right-star {
-    width: 100px; /* Adjust the size as needed */
+    width: 100px;
     height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
-                       68%, 57%, 79% 91%, 50% 70%, 21% 
+                       68% 57%, 79% 91%, 50% 70%, 21% 
                        91%, 32% 57%, 2% 35%, 39% 35%);
     
     position: absolute;
-    top: 5%; /* Positioning at the top */
-    right: 5%; /* Pushes it towards the right side */
+    top: 5%; /* Matches right star */
+    left: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
     box-shadow: 
@@ -59,7 +59,6 @@ width: 100%;
         inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
     border-radius: 10px;
     border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
-}
 }
 
 
