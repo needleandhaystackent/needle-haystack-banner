@@ -6,7 +6,7 @@ body {
     text-align: center;
     background-color: #363739;
     background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
-    background-size: 100% 100%; /* Ensures the image fully fills the banner without tiling */
+    background-size: cover; /* Ensures full coverage */
     background-position: center center;
     background-repeat: no-repeat;
     
@@ -23,7 +23,10 @@ width: 100%;
     height: 100vh; /* Uses the full height of the visible screen */
     max-height: 800px; /* Ensures it doesn't get too tall */
     overflow: hidden; /* Prevents any overflow that causes scrolling */
-    opacity: 0.8;
+    opacity: 0.9;
+    display: flex; /* Allows child elements to align */
+    align-items: flex-start; /* Pushes everything up */
+    justify-content: center;
 }
 
 .title {
@@ -31,7 +34,6 @@ width: 100%;
     font-weight: bold;
     text-transform: uppercase;
     color: black; /* Fills the inside of the text */
-    text-transform: uppercase;
     text-shadow: 
         3px 3px 6px rgba(0, 0, 0, 0.8), /* Bottom-right dark shadow */
         -3px -3px 6px rgba(255, 255, 255, 0.6), /* Top-left highlight */
@@ -39,9 +41,10 @@ width: 100%;
 
     /* Add Positioning to Move It Up */
     position: absolute;
-    top: 2%;  /* Moves title higher up */
+    top: 0;  /* Moves title higher up */
     left: 50%;
     transform: translateX(-50%);
+    padding-top: 10px; /* Add space from the very top */
 }
 
 
