@@ -78,7 +78,7 @@ width: 100%;
     justify-content: center;
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
-    background: rgba(255, 215, 0, 0.85); /* Gold color */
+    background: radial-gradient(circle at center, #ffcc00, #d4af37);
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 
         68% 57%, 79% 91%, 50% 70%, 
@@ -89,17 +89,15 @@ width: 100%;
     font-weight: bold;
     text-align: center;
     color: black;
-    text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.8);
-    animation: glow 2s infinite alternate ease-in-out;
-    border: 2px solid red !important;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transform: rotate3d(1, 1, 0, 20deg);
+    transition: transform 0.5s ease-in-out;
 }
 
-/* Glowing Effect */
-@keyframes glow {
-    0% { filter: brightness(1); }
-    50% { filter: brightness(1.5); }
-    100% { filter: brightness(2); }
-    
+/* ⭐ Interactive 3D Tilt on Hover */
+.star:hover {
+    transform: rotate3d(1, 1, 0, 10deg);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);   
 }
 
     
@@ -108,21 +106,21 @@ width: 100%;
 .actor {
     top: 10%; /* Adjust to touch Needle and Haystack */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); rotate3d(1, 1, 0, 20deg);
 }
 
 /* 🎥 Reality TV Star (Left & Lower) */
 .realitytv {
     top: 20%; /* Lower than Actor */
     left: 30%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); rotate3d(1, 1, 0, 20deg);
 }
 
 /* 🎮 Game Show Star (Right & Mirroring Reality TV) */
 .gameshow {
     top: 20%; /* Same level as RealityTV */
     left: 70%; /* Mirroring position */
-    transform: translateX(-50%);
+    transform: translateX(-50%); rotate3d(1, 1, 0, 20deg);
 }
 
 
