@@ -48,8 +48,9 @@ width: 100%;
                        2% 35%, 39% 35%);
     
     position: absolute;
-    top: 5%; /* Matches right star */
-    right: 2%; /* Pushes it towards the left side */
+    top: 15%; /* Matches right star */
+    left: auto;
+    right: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
     box-shadow: 
@@ -57,7 +58,6 @@ width: 100%;
         -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
         inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
         inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border-radius: 10px;
     border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
 }
 
@@ -66,13 +66,13 @@ width: 100%;
 .left-star {
     width: 50px;
     height: 50px;
-    clip-path: polygon (50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                         2% 35%, 39% 35%);
     
     position: absolute;
-    top: 5%; /* Matches right star */
-    left: 2%; /* Pushes it towards the left side */
+    top: 15%; /* Matches right star */
+    left: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
     box-shadow: 
@@ -80,7 +80,6 @@ width: 100%;
         -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
         inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
         inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border-radius: 10px;
     border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
 }
 
@@ -110,7 +109,6 @@ width: 100%;
         -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
         inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
         inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border-radius: 10px;
     border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
 }
 
