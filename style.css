@@ -39,48 +39,47 @@ width: 100%;
 }
 
 
-    /* Right Star */
-.right-star {
-    width: 50px;
-    height: 50px;
+    /* 🌟 Left Star */
+.left-star {
+    width: 50px !important;
+    height: 50px !important;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                        2% 35%, 39% 35%);
     
     position: absolute;
-    top: 15%; /* Matches right star */
-    left: auto;
-    right: 5%; /* Pushes it towards the left side */
+    top: 2%; /* Move it higher */
+    left: 5%; /* Push more left */
     opacity: 0.9;
-    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
+    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold */
     box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
-        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
-        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
+        5px 5px 10px rgba(0, 0, 0, 0.7), 
+        -5px -5px 10px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
-
-    /* Left Star - Mirrored */
-.left-star {
-    width: 50px;
-    height: 50px;
+/* 🌟 Right Star */
+.right-star {
+    width: 50px !important;
+    height: 50px !important;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
-                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
-                        2% 35%, 39% 35%);
+                       79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+                       2% 35%, 39% 35%);
     
     position: absolute;
-    top: 15%; /* Matches right star */
-    left: 5%; /* Pushes it towards the left side */
+    top: 2%; /* Matches left star */
+    left: auto; 
+    right: 5%; /* Mirror left star */
     opacity: 0.9;
-    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
+    background: linear-gradient(145deg, #ffde59, #e6c200);
     box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
-        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
-        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
+        5px 5px 10px rgba(0, 0, 0, 0.7), 
+        -5px -5px 10px rgba(255, 255, 255, 0.5),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
 
