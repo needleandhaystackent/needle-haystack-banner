@@ -20,7 +20,7 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full height of the viewport */
+    height: 85vh; /* Full height of the viewport */
     max-height: 800px; /* Ensures it doesn’t stretch too tall */
     overflow: hidden;
     opacity: 0.9;
