@@ -68,8 +68,8 @@ body {
 
     /* 🌟 Left Star */
 .left-star {
-    width: 50px !important; /* Forces correct width */
-    height: 50px !important;
+    width: 100px
+    height: 100px
     transform: scale(0.5); /* Shrinks the clip-path proportionally */
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
@@ -77,7 +77,7 @@ body {
     
     position: absolute;
     top: 2%; /* Move it higher */
-    left: 25%; /* Push more left */
+    left: 23%; /* Push more left */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold */
     border: 3px solid rgba(255, 215, 0, 0.9);
@@ -85,8 +85,8 @@ body {
 
 /* 🌟 Right Star */
 .right-star {
-    width: 50px !important; /* Forces correct width */
-    height: 50px !important;
+    width: 100px
+    height: 100px
     transform: scale(0.5); /* Shrinks the clip-path proportionally */
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
@@ -95,7 +95,7 @@ body {
     position: absolute;
     top: 2%; /* Matches left star */
     left: auto; 
-    right: 5%; /* Mirror left star */
+    right: 23%; /* Mirror left star */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200);
     border: 3px solid rgba(255, 215, 0, 0.9);
@@ -127,7 +127,7 @@ body {
         -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
         inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
         inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
-    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
+    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
 }
 
     
@@ -163,18 +163,17 @@ body {
     display: inline-block;
     background: silver; /* Silver background */
     color: white; /* White text */
-    font-size: 20px; /* Slightly smaller */
+    font-size: 30px; /* Slightly smaller */
     font-weight: bold;
     padding: 12px 25px; /* Adjust size */
     text-decoration: none;
-    border-radius: 40px; /* Keeps it rounded */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
+    border-radius: 60px; /* Keeps it rounded */
+    box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
     
     position: absolute;
-    top: 70%; /* Moves it 3/4 down the page */
+    top: 75%; /* Moves it 3/4 down the page */
     left: 50%;
     transform: translate(-50%, -50%); /* Ensures centering */
-    
     transition: all 0.3s ease; /* Smooth animation */
 }
 
