@@ -68,29 +68,26 @@ body {
 
     /* 🌟 Left Star */
 .left-star {
-    width: 50px;
-    height: 50px;
+    width: 50px !important; /* Forces correct width */
+    height: 50px !important;
+    transform: scale(0.5); /* Shrinks the clip-path proportionally */
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                        2% 35%, 39% 35%);
     
     position: absolute;
     top: 2%; /* Move it higher */
-    left: 5%; /* Push more left */
+    left: 25%; /* Push more left */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold */
-    box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.7), 
-        -5px -5px 10px rgba(255, 255, 255, 0.5),
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-        inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
 /* 🌟 Right Star */
 .right-star {
-    width: 50px;
-    height: 50px;
+    width: 50px !important; /* Forces correct width */
+    height: 50px !important;
+    transform: scale(0.5); /* Shrinks the clip-path proportionally */
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 
                        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
                        2% 35%, 39% 35%);
@@ -101,11 +98,6 @@ body {
     right: 5%; /* Mirror left star */
     opacity: 0.9;
     background: linear-gradient(145deg, #ffde59, #e6c200);
-    box-shadow: 
-        5px 5px 10px rgba(0, 0, 0, 0.7), 
-        -5px -5px 10px rgba(255, 255, 255, 0.5),
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-        inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
 }
 
