@@ -90,17 +90,23 @@ width: 100%;
     text-align: center;
     color: black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    transform: rotate3d(1, 1, 0, 20deg);
-    transition: transform 0.5s ease-in-out;
-}
-
-/* ⭐ Interactive 3D Tilt on Hover */
-.star:hover {
-    transform: rotate3d(1, 1, 0, 10deg);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);   
-}
-
     
+}
+    .stars-container .star {
+    animation: glow 1.5s infinite alternate;  
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.8)); 
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 1));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.8));
+    }
+}    
 
 /* 🌟 Actor Star (Top Center) */
 .actor {
