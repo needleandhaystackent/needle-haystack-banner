@@ -1,50 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 
-.body {
-    font-family: helvetica, sans-serif;
+/* Corrected Background Image */
+body {
+    font-family: Helvetica, sans-serif;
     text-align: center;
     background-color: #363739;
     background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
-    background-size: cover; /* Ensures full coverage */
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
-.width: 100%;
-    height: 100vh; /* Adjusts the height to match the viewport */
+    width: 100%;
+    height: 100vh;
     max-width: 1200px; /* Matches Google Sites width */
-    margin: auto; /* Centers everything */
+    margin: auto;
+}
 
-
-/* Banner Styling */
+/* Fix Banner Size */
 .banner {
     position: relative;
     width: 100%;
-    height: 100%; /* Uses the full height of the visible screen */
-    max-width: 800px; /* Matches Google Sites width */
-    margin: auto; /* Centers it */
-    overflow: hidden; /* Prevents any overflow that causes scrolling */
+    height: 100vh; /* Full height of the viewport */
+    max-height: 800px; /* Ensures it doesn’t stretch too tall */
+    overflow: hidden;
     opacity: 0.9;
-    display: flex; /* Allows child elements to align */
-    align-items: flex-start; /* Pushes everything up */
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Centers everything */
+    justify-content: flex-start; /* Moves title up */
 }
 
+/* Move Title Higher */
 .title {
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
-    color: black; /* Fills the inside of the text */
+    color: black;
     text-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.8), /* Bottom-right dark shadow */
-        -3px -3px 6px rgba(255, 255, 255, 0.6), /* Top-left highlight */
-        0px 0px 15px rgba(255, 215, 0, 0.7); /* Subtle gold glow */
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        -3px -3px 6px rgba(255, 255, 255, 0.6),
+        0px 0px 15px rgba(255, 215, 0, 0.7);
 
     position: absolute;
-    top: 10px;  /* Moves title higher up */
+    top: 2%;  /* Moves title closer to top */
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 0; /* Ensures no unnecessary spacing */
+    z-index: 10; /* Ensures it's above everything */
 }
 
 
