@@ -42,7 +42,7 @@ body {
         0px 0px 15px rgba(255, 215, 0, 0.7);
 
     position: absolute;
-    top: 2%;  /* Moves title closer to top */
+    top: 0.5%;  /* Moves title closer to top */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
