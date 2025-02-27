@@ -51,6 +51,16 @@ body {
 }
 
 
+/* Subtitle (Entertainment) Styling */
+.subtitle {
+    display: block; /* Ensures "Entertainment" is on a new line */
+    font-size: 40px; /* Slightly smaller */
+    color: black; /* Change this color if needed */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        -2px -2px 4px rgba(255, 255, 255, 0.6);
+}
+
     /* 🌟 Left Star */
 .left-star {
     width: 50px !important;
