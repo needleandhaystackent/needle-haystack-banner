@@ -72,7 +72,7 @@ width: 100%;
 
     /* 3 Star Styling */
 .star {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,8 +90,6 @@ width: 100%;
     text-align: center;
     color: black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    
-}
     
 }    
 
