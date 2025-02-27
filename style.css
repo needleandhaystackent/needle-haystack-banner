@@ -54,11 +54,17 @@ body {
 /* Subtitle (Entertainment) Styling */
 .subtitle {
     display: block; /* Ensures "Entertainment" is on a new line */
-    font-size: 40px; /* Slightly smaller */
+    font-size: 35px; /* Slightly smaller */
+    font-weight: bold; /* Matches title weight */
     color: black; /* Change this color if needed */
+    text-transform: uppercase; /* Matches title capitalization */
     text-shadow: 
-        2px 2px 4px rgba(0, 0, 0, 0.8),
-        -2px -2px 4px rgba(255, 255, 255, 0.6);
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        -3px -3px 6px rgba(255, 255, 255, 0.6),
+        0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
+    text-align: center;
+
+    
 }
 
     /* 🌟 Left Star */
