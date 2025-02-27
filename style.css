@@ -43,9 +43,7 @@ width: 100%;
 .right-star {
     width: 100px;
     height: 100px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
-                       68% 57%, 79% 91%, 50% 70%, 21% 
-                       91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     
     position: absolute;
     top: 5%; /* Matches right star */
@@ -66,9 +64,7 @@ width: 100%;
 .left-star {
     width: 100px;
     height: 100px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
-                       68% 57%, 79% 91%, 50% 70%, 21% 
-                       91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon (50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     
     position: absolute;
     top: 5%; /* Matches right star */
@@ -95,9 +91,7 @@ width: 100%;
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
     clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 
-        68% 57%, 79% 91%, 50% 70%, 21%, 
-        91%, 32% 57%, 2% 35%, 39% 35%);
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     
     font-family: 'Merriweather', serif;
     font-size: 20px;
