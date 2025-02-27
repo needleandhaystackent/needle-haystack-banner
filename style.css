@@ -39,7 +39,7 @@ width: 100%;
 
     /* Add Positioning to Move It Up */
     position: absolute;
-    top: 8%;  /* Moves title higher up */
+    top: 2%;  /* Moves title higher up */
     left: 50%;
     transform: translateX(-50%);
 }
