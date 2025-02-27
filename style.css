@@ -171,24 +171,26 @@ body {
     display: inline-block;
     background: silver; /* Silver background */
     color: white; /* White text */
-    font-size: 24px;
+    font-size: 20px; /* Slightly smaller */
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 12px 25px; /* Adjust size */
     text-decoration: none;
-    border-radius: 50px; /* Makes it eye-catching */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
-    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 40px; /* Keeps it rounded */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
     
     position: absolute;
     top: 75%; /* Moves it 3/4 down the page */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%); /* Ensures centering */
+    
+    transition: all 0.3s ease; /* Smooth animation */
 }
 
 /* Hover Effect */
 .cta-button:hover {
     background: gold; /* Turns gold on hover */
-    color: black; /* Text becomes black */
-    transform: scale(1.1); /* Button gets bigger */
+    color: black; /* Text turns black */
+    transform: translate(-50%, -50%) scale(1.1); /* Button grows but stays centered */
     box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
+}
 }
