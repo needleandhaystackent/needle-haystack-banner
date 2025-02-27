@@ -45,6 +45,8 @@ body {
     top: 2%;  /* Moves title closer to top */
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
     z-index: 10; /* Ensures it's above everything */
 }
 
