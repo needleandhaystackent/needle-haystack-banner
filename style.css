@@ -40,7 +40,7 @@ width: 100%;
 
 
     /* Right Star */
-right-star {
+.right-star {
     width: 100px;
     height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
@@ -63,7 +63,7 @@ right-star {
 
 
     /* Left Star - Mirrored */
-left-star {
+.left-star {
     width: 100px;
     height: 100px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
@@ -87,7 +87,7 @@ left-star {
 
 
     /* 3 Star Styling */
-star {
+.star {
     position: absolute;
     display: flex;
     align-items: center; /* Centers text horizontally */
