@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
 
-body {
+.body {
     font-family: helvetica, sans-serif;
     text-align: center;
     background-color: #363739;
@@ -10,7 +10,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     
-width: 100%;
+.width: 100%;
     height: 100vh; /* Adjusts the height to match the viewport */
     max-width: 1200px; /* Matches Google Sites width */
     margin: auto; /* Centers everything */
@@ -18,10 +18,11 @@ width: 100%;
 
 /* Banner Styling */
 .banner {
-    position: relative;
+    position: absolute;
+    top: 0; /* Aligns everything to the very top */
+    left: 0;
     width: 100%;
     height: 100vh; /* Uses the full height of the visible screen */
-    max-height: 800px; /* Ensures it doesn't get too tall */
     overflow: hidden; /* Prevents any overflow that causes scrolling */
     opacity: 0.9;
     display: flex; /* Allows child elements to align */
@@ -30,7 +31,7 @@ width: 100%;
 }
 
 .title {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     color: black; /* Fills the inside of the text */
@@ -39,12 +40,11 @@ width: 100%;
         -3px -3px 6px rgba(255, 255, 255, 0.6), /* Top-left highlight */
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Subtle gold glow */
 
-    /* Add Positioning to Move It Up */
     position: absolute;
-    top: 0;  /* Moves title higher up */
+    top: 10px;  /* Moves title higher up */
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 10px; /* Add space from the very top */
+    margin-top: 0; /* Ensures no unnecessary spacing */
 }
 
 
