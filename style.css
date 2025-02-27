@@ -192,4 +192,3 @@ body {
     transform: translate(-50%, -50%) scale(1.1); /* Button grows but stays centered */
     box-shadow: 0px 0px 20px rgba(255, 223, 0, 0.9); /* Glowing effect */
 }
-}
