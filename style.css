@@ -74,8 +74,8 @@ width: 100%;
 .star {
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centers text horizontally */
+    justify-content: center; /* Centers text inside the star */
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
     background: linear-gradient(145deg, #f7c948, #cfa020);
@@ -85,9 +85,9 @@ width: 100%;
         21% 91%, 32% 57%, 2% 35%, 39% 35%
     );
     font-family: 'Merriweather', serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: center; /* Ensures text is centered */
     color: #fcfcfc;    
 }    
 
