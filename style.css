@@ -169,7 +169,7 @@ body {
     box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
     
     position: absolute;
-    top: 75%; /* Moves it 3/4 down the page */
+    top: 80%; /* higher the number, lower to page */
     left: 50%;
     transform: translate(-50%, -50%); /* Ensures centering */
     transition: all 0.3s ease; /* Smooth animation */
