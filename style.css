@@ -45,13 +45,14 @@ width: 100%;
 .right-star {
     width: 100px; /* Adjust the size as needed */
     height: 100px;
-    background-color: gold;
+    background: linear-gradient(145deg, #f7d774, #d4af37);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     position: absolute;
     top: 15%; /* Positioning at the top */
     right: 5%; /* Pushes it towards the right side */
     opacity: 0.9;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -59,13 +60,14 @@ width: 100%;
 .left-star {
     width: 100px;
     height: 100px;
-    background-color: gold;
+    background: linear-gradient(145deg, #f7d774, #d4af37);
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     position: absolute;
     top: 15%; /* Matches right star */
     left: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
 
@@ -78,7 +80,7 @@ width: 100%;
     justify-content: center; /* Centers text inside the star */
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
-    background: linear-gradient(145deg, #f7c948, #cfa020);
+    background: linear-gradient(145deg, #f7d774, #d4af37); /* Gold color gradient */
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 
         68% 57%, 79% 91%, 50% 70%, 
@@ -89,7 +91,8 @@ width: 100%;
     font-weight: bold;
     text-align: center; /* Ensures text is centered */
     color: #fcfcfc;    
-}    
+}   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
+                -5px -5px 10px rgba(255, 255, 255, 0.6); /* Embossed effect */
 
 
     
