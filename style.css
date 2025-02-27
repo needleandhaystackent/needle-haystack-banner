@@ -26,8 +26,8 @@ body {
     opacity: 0.9;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Centers everything */
-    justify-content: flex-start; /* Moves title up */
+    align-items: flex-start; /* Ensure content aligns to top */
+    justify-content: center;
 }
 
 /* Move Title Higher */
@@ -42,12 +42,12 @@ body {
         0px 0px 15px rgba(255, 215, 0, 0.7);
 
     position: absolute;
-    top: 0.5%;  /* Moves title closer to top */
+    top: 0%;  /* Moves title closer to top */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
-    z-index: 10; /* Ensures it's above everything */
+    z-index: 20; /* Ensures it's above everything */
 }
 
 
@@ -62,6 +62,7 @@ body {
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
+    margin-top: -20px; /* Moves it up closer to title */
     text-align: center;
 
     
