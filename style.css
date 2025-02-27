@@ -31,13 +31,11 @@ width: 100%;
     font-weight: bold;
     text-transform: uppercase;
     color: black; /* Fills the inside of the text */
-    -webkit-text-stroke: 2px gold; /* Creates the yellow outline (for Chrome, Safari, Edge) */
+    text-transform: uppercase;
     text-shadow: 
-        1px 1px 0 gold, 
-        -1px -1px 0 gold, 
-        -1px 1px 0 gold, 
-        1px -1px 0 gold; /* Backup for non-WebKit browsers */
-    margin-top: 15px;
+        3px 3px 6px rgba(0, 0, 0, 0.8), /* Bottom-right dark shadow */
+        -3px -3px 6px rgba(255, 255, 255, 0.6), /* Top-left highlight */
+        0px 0px 15px rgba(255, 215, 0, 0.7); /* Subtle gold glow */
 }
 
 
@@ -45,14 +43,23 @@ width: 100%;
 .right-star {
     width: 100px; /* Adjust the size as needed */
     height: 100px;
-    background: linear-gradient(145deg, #f7d774, #d4af37);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
+                       68%, 57%, 79% 91%, 50% 70%, 21% 
+                       91%, 32% 57%, 2% 35%, 39% 35%);
+    
     position: absolute;
-    top: 15%; /* Positioning at the top */
+    top: 5%; /* Positioning at the top */
     right: 5%; /* Pushes it towards the right side */
     opacity: 0.9;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
+    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
+        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
+        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
+}
 }
 
 
@@ -60,14 +67,22 @@ width: 100%;
 .left-star {
     width: 100px;
     height: 100px;
-    background: linear-gradient(145deg, #f7d774, #d4af37);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
+                       68% 57%, 79% 91%, 50% 70%, 21% 
+                       91%, 32% 57%, 2% 35%, 39% 35%);
+    
     position: absolute;
-    top: 15%; /* Matches right star */
+    top: 5%; /* Matches right star */
     left: 5%; /* Pushes it towards the left side */
     opacity: 0.9;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
+    background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
+        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
+        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
 }
 
 
@@ -80,20 +95,25 @@ width: 100%;
     justify-content: center; /* Centers text inside the star */
     width: 315px;  /* Adjust to keep stars even */
     height: 315px; /* Ensures proportional size */
-    background: linear-gradient(145deg, #f7d774, #d4af37); /* Gold color gradient */
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 
-        68% 57%, 79% 91%, 50% 70%, 
-        21% 91%, 32% 57%, 2% 35%, 39% 35%
-    );
+        68% 57%, 79% 91%, 50% 70%, 21%, 
+        91%, 32% 57%, 2% 35%, 39% 35%);
+    
     font-family: 'Merriweather', serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center; /* Ensures text is centered */
     color: #fcfcfc;    
-}   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), -3px -3px 5px rgba(255, 255, 255, 0.8);
-    border: 2px solid rgba(255, 215, 0, 0.8); /* Gold border for more pop */
-
+   background: linear-gradient(145deg, #ffde59, #e6c200); /* Gold gradient for 3D look */
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.7), /* Deep bottom-right shadow */
+        -5px -5px 10px rgba(255, 255, 255, 0.5), /* Highlight on top-left */
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5), /* Inner shading for depth */
+        inset -2px -2px 5px rgba(255, 255, 255, 0.4); /* Inner light reflection */
+    border-radius: 10px;
+    border: 3px solid rgba(255, 215, 0, 0.9); /* Gold border */
+}
 
     
 
