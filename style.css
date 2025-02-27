@@ -62,7 +62,6 @@ body {
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
-    margin-top: -20px; /* Moves it up closer to title */
     text-align: center;
 
     
