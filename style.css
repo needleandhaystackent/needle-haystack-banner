@@ -160,7 +160,7 @@ body {
     text-decoration: none;
     border-radius: 60px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease;
@@ -185,11 +185,11 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 80px; /* Arrow width */
-    height: 80px; /* Arrow height */
+    width: 90px; /* Arrow width */
+    height: 90px; /* Arrow height */
     background: transparent;
     border: solid #3c3d3f; /* Matches button color */
-    border-width: 8px 8px 0 0; /* Creates the diagonal arrow shape */
+    border-width: 12px 12px 0 0; /* Creates the diagonal arrow shape */
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
@@ -198,24 +198,24 @@ body {
 /* 🔹 Position Arrows (All Point to the Center Button) */
 .arrow-left {
     top: 50%;
-    left: 20%;
-    transform: translateY(-50%) rotate(-135deg); /* Left arrow */
+    left: 28%;
+    transform: translateY(-50%) rotate(45deg); /* Left arrow */
 }
 
 .arrow-right {
     top: 50%;
-    right: 20%;
-    transform: translateY(-50%) rotate(45deg); /* Right arrow */
+    right: 28%;
+    transform: translateY(-50%) rotate(-135deg); /* Right arrow */
 }
 
 .arrow-top {
-    top: 30%;
+    top: 38%;
     left: 50%;
-    transform: translateX(-50%) rotate(-45deg); /* Top arrow */
+    transform: translateX(-50%) rotate(135deg); /* Top arrow */
 }
 
 .arrow-bottom {
-    bottom: 15%;
+    bottom: 20%;
     left: 50%;
-    transform: translateX(-50%) rotate(135deg); /* Bottom arrow */
+    transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
