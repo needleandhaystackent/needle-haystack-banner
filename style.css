@@ -79,7 +79,7 @@ body {
         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
         2% 35%, 39% 35%);
     font-family: 'Merriweather', serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: #37383a;
@@ -93,13 +93,13 @@ body {
 
 /* Increase emoji size */
 .star .emoji {
-    font-size: 50px; /* Increases emoji size */
-    margin-bottom: 5px; /* Adds space between emoji and text */
+    font-size: 40px; /* Increases emoji size */
+    margin-bottom: 2px; /* Adds space between emoji and text */
 }
 
 /* Ensure text inside stars stays centered */
 .star .star-text {
-    font-size: 24px; /* Adjust text size */
+    font-size: 20px; /* Adjust text size */
     line-height: 1.2; /* Adjusts spacing between lines */
 }
 
