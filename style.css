@@ -64,17 +64,17 @@ body {
     100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
 }
 
-/* 🔹 Slogan */
+/* 🔹 Smaller Slogan */
 .slogan-container {
     display: inline-block;
-    max-width: 50%;
+    max-width: 40%;
     text-align: center;
     background: #3c3d3f;
-    padding: 5px 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    padding: 3px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     position: absolute;
-    top: 23%;
+    top: 22%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -83,20 +83,20 @@ body {
 .slogan-container h2 {
     margin: 0;
     padding: 0;
-    line-height: 1.1;
+    line-height: 1;
 }
 
-/* 🔹 Slogan Text */
+/* 🔹 Smaller Slogan Text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(18px, 2.8vw, 40px);
+    font-size: clamp(14px, 2vw, 30px);
     font-weight: bold;
     background: linear-gradient(145deg, #ffcc00, #ffdd44);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 /* 🔹 Glowing "Needles" */
@@ -108,7 +108,7 @@ body {
 
 .slogan-subtext .shiny {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -123,7 +123,7 @@ body {
     flex-wrap: nowrap;
     width: 90%;
     max-width: 1200px;
-    margin-top: -60px;
+    margin-top: -40px;
     position: relative;
 }
 
@@ -153,14 +153,14 @@ body {
 /* 🔹 Adjust Text & Emojis in Stars */
 .star .emoji {
     font-size: 60px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .star .star-text {
     font-size: 18px;
     line-height: 1.2;
     position: relative;
-    top: -30px;
+    top: -30x;
 }
 
 /* 🔹 Cast Me Now Button (Perfect Center) */
@@ -195,19 +195,26 @@ body {
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
+/* 🔹 Glowing Arrows */
+@keyframes arrowGlow {
+    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+}
+
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
     width: 60px;
     height: 60px;
-    border: solid #3c3d3f; /* Same color as button */
+    border: solid #3c3d3f; /* Matches button color */
     border-width: 10px 10px 0 0;
     transform-origin: center;
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Position Arrows (Pointing Perfectly to Button) */
-.arrow-left { top: 50%; left: 30%; transform: rotate(135deg); }
-.arrow-right { top: 50%; right: 30%; transform: rotate(-45deg); }
-.arrow-top { top: 40%; left: 50%; transform: translateX(-50%) rotate(225deg); }
-.arrow-bottom { bottom: 40%; left: 50%; transform: translateX(-50%) rotate(45deg); }
+/* 🔹 Arrows Now Point **Directly** at the Button */
+.arrow-left { top: 50%; left: 30%; transform: rotate(-135deg); }
+.arrow-right { top: 50%; right: 30%; transform: rotate(45deg); }
+.arrow-top { top: 35%; left: 50%; transform: translateX(-50%) rotate(-135deg); }
+.arrow-bottom { bottom: 35%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
