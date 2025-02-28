@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 310px;
     height: 310px;
     clip-path: polygon(
@@ -89,6 +89,18 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
+}
+
+/* Increase emoji size */
+.star .emoji {
+    font-size: 50px; /* Increases emoji size */
+    margin-bottom: 5px; /* Adds space between emoji and text */
+}
+
+/* Ensure text inside stars stays centered */
+.star .star-text {
+    font-size: 24px; /* Adjust text size */
+    line-height: 1.2; /* Adjusts spacing between lines */
 }
 
 /* Positioning for Stars */
