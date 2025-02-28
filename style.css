@@ -208,7 +208,7 @@ body {
     width: 6vw;
     height: 6vw;
     border: solid #3c3d3f;
-    border-width: 15px 15px 0 0;
+    border-width: 12px 12px 0 0;
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
