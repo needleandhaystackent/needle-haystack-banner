@@ -128,7 +128,7 @@ body {
 
 /* 🔹 Customize Emoji & Text Size Inside Stars */
 .star .emoji {
-    font-size: 80px; /* Adjust emoji size */
+    font-size: 65px; /* Adjust emoji size */
     margin-bottom: 5px;
 }
 
@@ -136,7 +136,7 @@ body {
     font-size: 20px; /* Adjust text size */
     line-height: 1.2;
     position: relative;
-    top: -25px;
+    top: -10px;
 
 }
 
