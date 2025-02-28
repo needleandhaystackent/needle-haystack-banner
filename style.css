@@ -79,6 +79,13 @@ body {
     line-height: 1.1; /* Tighter spacing for better fit *//
 }
 
+/* 🔥 Further Force Box to Match Text */
+.slogan-container h2 {
+    margin: 0; /* Removes unnecessary extra spacing */
+    padding: 0; /* Ensures no extra height */
+    line-height: 1.1; /* Keeps text within the box */
+}
+
 /* Main slogan text */
 .slogan {
     font-family: 'Playfair Display', serif;
