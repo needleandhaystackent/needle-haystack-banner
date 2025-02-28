@@ -205,10 +205,10 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 6vw;
-    height: 6vw;
+    width: 8vw;
+    height: 8vw;
     border: solid #3c3d3f;
-    border-width: 8px 18x 0 0;
+    border-width: 8px 15x 0 0;
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
