@@ -13,11 +13,11 @@ body {
     margin: auto;
 }
 
-/* Banner */
+/* 🔹 Banner */
 .banner {
     position: relative;
     width: 100%;
-    min-height: 85vh; /* Ensures it's not too small */
+    min-height: 85vh;
     max-height: 900px;
     overflow: visible;
     display: flex;
@@ -26,9 +26,9 @@ body {
     justify-content: center;
 }
 
-/* Title */
+/* 🔹 Title */
 .title {
-    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
+    font-size: clamp(20px, 4vw, 50px);
     font-weight: bold;
     text-transform: uppercase;
     color: black;
@@ -42,10 +42,10 @@ body {
     white-space: nowrap;
 }
 
-/* Subtitle */
+/* 🔹 Subtitle */
 .subtitle {
     display: block;
-    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
+    font-size: clamp(20px, 4vw, 50px);
     font-weight: bold;
     color: black;
     text-transform: uppercase;
@@ -57,35 +57,39 @@ body {
     margin-top: -30px;
 }
 
-/* Glowing Animation */
+/* 🔹 Glowing Animation */
 @keyframes glowEffect {
     0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
     50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
     100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
 }
 
-/* Slogan */
+/* 🔹 Slogan */
 .slogan-container {
     display: inline-block;
-    max-width: 80vw; /* Prevents stretching */
+    max-width: 50%;
     text-align: center;
     background: #3c3d3f;
-    padding: 8px 20px;
+    padding: 5px 15px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* 🔥 Further Force Box to Match Text */
+/* 🔥 Ensure Box Fits Text */
 .slogan-container h2 {
-    margin: 0; /* Removes unnecessary extra spacing */
-    padding: 0; /* Ensures no extra height */
-    line-height: 1.1; /* Keeps text within the box */
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
 }
 
-/* Main slogan text */
+/* 🔹 Slogan Text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
+    font-size: clamp(18px, 2.8vw, 40px);
     font-weight: bold;
     background: linear-gradient(145deg, #ffcc00, #ffdd44);
     -webkit-background-clip: text;
@@ -95,63 +99,38 @@ body {
     line-height: 1.2;
 }
 
-/* "We Find the Needles" - Make "Needles" Shine */
+/* 🔹 Glowing "Needles" */
 @keyframes shine {
     0% { background-position: 0%; filter: brightness(1); }
-    50% { background-position: 100%; filter: brightness(1.5); } /* Increased brightness */
+    50% { background-position: 100%; filter: brightness(1.5); }
     100% { background-position: 0%; filter: brightness(1); }
 }
 
-/* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
-    font-size: 32px; /* Increased size */
-    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff); /* Brighter silver gradient */
+    font-size: 32px;
+    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 2s infinite alternate;
 }
 
-/* Star Container */
+/* 🔹 Star Container (Moves Higher) */
 .star-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; /* Allows stars to reposition on smaller screens */
+    flex-wrap: nowrap;
     width: 90%;
     max-width: 1200px;
-    margin-top: -110px;
+    margin-top: -90px;
     position: relative;
 }
 
-/* Left and Right Star Containers */
-.left-stars,
-.right-stars {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-/* 🔹 Customize Emoji & Text Size Inside Stars */
-.star .emoji {
-    font-size: 55px; /* Adjust emoji size */
-    margin-bottom: 3px;
-}
-
-.star .star-text {
-    font-size: 18px; /* Adjust text size */
-    line-height: 1.2;
-    position: relative;
-    top: -30px;
-
-}
-
-
-/* Stars - Now with Glowing Animation */
+/* 🔹 Star Styling */
 .star {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0; /* Prevents stars from resizing */
     align-items: center;
     justify-content: center;
     width: 290px;
@@ -171,37 +150,39 @@ body {
     animation: glowEffect 2s infinite alternate;
 }
 
+/* 🔹 Cast Me Now Button */
 .cta-container {
-    position: relative;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px; /* Ensures proper space */
 }
 
-
-/* "Cast Me Now" Button - Glowing Effect */
 .cta-button {
     background: #3c3d3f;
     color: white;
-    font-size: clamp(20px, 4vw, 50px);
+    font-size: clamp(20px, 3vw, 50px);
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 15px 35px;
     text-decoration: none;
     border-radius: 60px;
     animation: glowEffect 2s infinite alternate;
+    text-align: center;
 }
 
-/* Hover Effect for Button */
+/* 🔥 Hover Effect */
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: scale(1.1); /* No longer affects layout */
+    transform: scale(1.1);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
-/* 🔥 Glowing Animation for Arrows */
+/* 🔹 Glowing Arrows */
 @keyframes arrowGlow {
     0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
     50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
@@ -211,34 +192,17 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 5vw; /* Scale dynamically */
-    height: 5vw; /* Scale dynamically */
+    width: 6vw;
+    height: 6vw;
     border: solid #3c3d3f;
-    border-width: 12px 12px 0 0; /* Creates diagonal arrow */
+    border-width: 15px 15px 0 0;
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Position Arrows (All Point to the Center Button) */
-.arrow-left {
-    top: 48%;
-    left: 18%;
-}
-
-.arrow-right {
-    top: 48%;
-    right: 18%;
-}
-
-.arrow-top {
-    top: 18%;
-    left: 50%;
-    transform: translateX(-50%) rotate(135deg);
-}
-
-.arrow-bottom {
-    bottom: 18%;
-    left: 50%;
-    transform: translateX(-50%) rotate(-45deg);
-}
+/* 🔹 Position Arrows */
+.arrow-left { top: 55%; left: 22%; transform: rotate(45deg); }
+.arrow-right { top: 55%; right: 22%; transform: rotate(-135deg); }
+.arrow-top { top: 28%; left: 50%; transform: translateX(-50%) rotate(135deg); }
+.arrow-bottom { bottom: 25%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
