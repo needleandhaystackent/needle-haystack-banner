@@ -160,13 +160,13 @@ body {
     font-size: 18px;
     line-height: 1.2;
     position: relative;
-    top: -20px; /* Moves text up */
+    top: -25px; /* Moves text up */
 }
 
 /* 🔹 Cast Me Now Button (Perfect Center) */
 .cta-container {
     position: absolute;
-    top: 25%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
