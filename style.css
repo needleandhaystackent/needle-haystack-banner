@@ -63,31 +63,37 @@ body {
 /* Slogan */
 .slogan-container {
     position: relative;
-    margin-top: 20px;
-    width: 80%;
+    width: 60%; /* Make it smaller */
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* Slightly transparent for creative effect */
+    padding: 10px 15px; /* Reduce padding */
+    border-radius: 15px; /* Rounder edges for a sleek design */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Softer golden glow */
+    margin-top: -20px; /* Moves it up slightly */
+    z-index: 2;
 }
 
 /* Main slogan text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: 32px; /* Reduced size */
+    font-size: 28px; /* Reduce size */
     font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    line-height: 1.3; /* Better readability */
+    background: linear-gradient(145deg, #ffcc00, #ffdd44); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stronger contrast */
+    letter-spacing: 1.5px; /* Slightly spaced for elegance */
+    line-height: 1.2; /* Improve readability */
 }
 
 /* We Find the Needles - Make it Smaller and Below */
 .slogan-subtext {
-    font-size: 24px; /* Smaller than main slogan */
+    font-size: 22px; /* Slightly smaller */
+    font-weight: 400;
+    color: #ffcc00; /* Gold text for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* More defined */
     display: block;
     margin-top: 5px;
-    font-weight: 400;
 }
 
 /* Star Container */
@@ -96,7 +102,7 @@ body {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin-top: 40px;
+    margin-top: -30px; /* Move stars up */
     position: relative;
 }
 
@@ -158,7 +164,7 @@ body {
     text-decoration: none;
     border-radius: 60px;
     box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4);
-    margin-top: 50px;
+    margin-top: 40px;
     transition: all 0.3s ease;
 }
 
