@@ -58,12 +58,12 @@ body {
     margin-top: -30px;
 }
 
-/* Slogan Box - Animated Glowing Effect */
-@keyframes glow {
+/* Glowing Animation for Stars & Button */
+@keyframes glowEffect {
     0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
     100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-} /* <-- Closing the keyframes correctly */
+}
 
 /* Slogan */
 .slogan-container {
@@ -73,11 +73,11 @@ body {
     background: rgba(0, 0, 0, 0.3);
     padding: 8px 13px;
     border-radius: 15px;
-    animation: glow 2s infinite alternate; /* Glowing animation */
+    animation: glowEffect 2s infinite alternate; /* Glowing animation */
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
     z-index: 2;
-} /* <-- Closing the .slogan-container correctly */
+}
 
 /* Main slogan text */
 .slogan {
@@ -106,7 +106,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     display: block;
     margin-top: 5px;
-} /* <-- Correctly closing .slogan-subtext */
+}
 
 /* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
@@ -136,15 +136,7 @@ body {
     gap: 30px;
 }
 
-/* Glowing Animation for Stars */
-@keyframes starGlow {
-    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
-    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-
-}
-
-/* Stars */
+/* Stars - Now with Glowing Animation */
 .star {
     display: flex;
     flex-direction: column;
@@ -162,9 +154,9 @@ body {
     text-align: center;
     color: #37383a;
     background: linear-gradient(145deg, #ffde59, #e6c200);
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Initial glow */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     border: 3px solid rgba(255, 215, 0, 0.9);
-    animation: starGlow 2s infinite alternate; /* Apply glowing animation */
+    animation: glowEffect 2s infinite alternate; /* Apply glowing animation */
 }
 
 /* Adjust emoji size & spacing */
@@ -181,21 +173,25 @@ body {
     top: -30px;
 }
 
-/* "Cast Me Now" Button */
+/* "Cast Me Now" Button - Glowing Effect */
 .cta-button {
     display: block;
     background: #3c3d3f;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    padding: 12px 25px;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 60px;
-    box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4);
-    margin-top: 10px;
+    position: absolute;
+    bottom: 25%; /* Moved up by 25% from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 0.3s ease;
+    animation: glowEffect 2s infinite alternate; /* Always glowing */
 }
 
+/* Hover Effect for Button */
 .cta-button:hover {
     background: gold;
     color: black;
