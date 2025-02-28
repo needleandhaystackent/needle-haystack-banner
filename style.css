@@ -215,7 +215,7 @@ body {
 }
 
 /* 🔹 Position Arrows (All Evenly Pointing to Button) */
-.arrow-left { top: 50%; left: 20%; transform: rotate(45deg); }
-.arrow-right { top: 50%; right: 20%; transform: rotate(-135deg); }
+.arrow-left { top: 50%; left: 30%; transform: rotate(45deg); }
+.arrow-right { top: 50%; right: 30%; transform: rotate(-135deg); }
 .arrow-top { top: 35%; left: 50%; transform: translateX(-50%) rotate(135deg); }
 .arrow-bottom { bottom: 20%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
