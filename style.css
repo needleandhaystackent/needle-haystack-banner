@@ -121,6 +121,7 @@ body {
 .star-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap; /* Prevents elements from stacking */
     width: 90%;
     max-width: 1200px;
     margin-top: -110px;
