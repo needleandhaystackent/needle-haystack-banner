@@ -29,7 +29,7 @@ body {
 
 /* Title */
 .title {
-    font-size: 50px;
+    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
     font-weight: bold;
     text-transform: uppercase;
     color: black;
@@ -46,7 +46,7 @@ body {
 /* Subtitle */
 .subtitle {
     display: block;
-    font-size: 35px;
+    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
     font-weight: bold;
     color: black;
     text-transform: uppercase;
@@ -69,14 +69,15 @@ body {
 .slogan-container {
     position: relative;
     display: inline-block; /* Shrink-wraps the box to fit the text */
-    max-width: 100%; /* Prevents it from expanding too much */
+    max-width: fit-content; /* Prevents extra space */
     text-align: center;
     background: #3c3d3f; /* Matches "Cast Me Now" button */
     padding: 5px 15px; /* Reduced padding to tighten box */
     border-radius: 15px;
     animation: glowEffect 2s infinite alternate;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-    line-height: 1.1; /* Tighter spacing for better fit *//
+    line-height: 1.1; /* Tighter spacing for better fit */
+    white-space: normal; /* Allows text to wrap naturally */
 }
 
 /* 🔥 Further Force Box to Match Text */
@@ -89,7 +90,7 @@ body {
 /* Main slogan text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: 26px;
+    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
     font-weight: bold;
     background: linear-gradient(145deg, #ffcc00, #ffdd44);
     -webkit-background-clip: text;
@@ -121,7 +122,7 @@ body {
 .star-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; /* Prevents elements from stacking */
+    flex-wrap: wrap; /* Allows stars to reposition on smaller screens */
     width: 90%;
     max-width: 1200px;
     margin-top: -110px;
@@ -155,6 +156,7 @@ body {
 .star {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0; /* Prevents stars from resizing */
     align-items: center;
     justify-content: center;
     width: 290px;
@@ -179,13 +181,13 @@ body {
     display: block;
     background: #3c3d3f;
     color: white;
-    font-size: 28px;
+    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
     font-weight: bold;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 60px;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease;
@@ -210,10 +212,12 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 90px; /* Arrow width */
-    height: 90px; /* Arrow height */
+    width: 50px; /* Arrow width */
+    height: 50px; /* Arrow height */
     background: transparent;
-    border: solid #3c3d3f; /* Matches button color */
+    font-size: 50px;
+    border: #3c3d3f; /* Matches button color */
+    border-style: solid;
     border-width: 12px 12px 0 0; /* Creates the diagonal arrow shape */
     display: block;
     padding: 10px;
@@ -234,7 +238,7 @@ body {
 }
 
 .arrow-top {
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%) rotate(135deg); /* Top arrow */
 }
