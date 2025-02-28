@@ -74,7 +74,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     position: absolute;
-    top: 20%; /* Moves it just below "Entertainment" */
+    top: 23%; /* Moves it just below "Entertainment" */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -160,7 +160,7 @@ body {
     font-size: 18px;
     line-height: 1.2;
     position: relative;
-    top: -10px; /* Moves text up */
+    top: -5px; /* Moves text up */
 }
 
 /* 🔹 Cast Me Now Button (Perfect Center) */
