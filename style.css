@@ -118,7 +118,7 @@ body {
 /* Call to Action Button - "Cast Me Now" */
 .cta-button {
     display: inline-block;
-    background: silver; /* Silver background */
+    background: #3c3d3f; /* Silver background */
     color: white; /* White text */
     font-size: 30px; /* Slightly smaller */
     font-weight: bold;
