@@ -185,15 +185,37 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    color: #3c3d3f;
-    font-size: 50px;
+    width: 80px; /* Arrow width */
+    height: 80px; /* Arrow height */
+    background: transparent;
+    border: solid #3c3d3f; /* Matches button color */
+    border-width: 8px 8px 0 0; /* Creates the diagonal arrow shape */
+    display: block;
+    padding: 10px;
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* Proper Arrow Positioning */
-.arrow-left { top: 50%; left: 20%; transform: translateY(-50%) rotate(180deg); }
-.arrow-right { top: 50%; right: 20%; transform: translateY(-50%); }
-.arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(-90deg); }
-.arrow-bottom { bottom: 15%; left: 50%; transform: translateX(-50%) rotate(90deg); }
+/* 🔹 Position Arrows (All Point to the Center Button) */
+.arrow-left {
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%) rotate(-135deg); /* Left arrow */
+}
+
+.arrow-right {
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%) rotate(45deg); /* Right arrow */
+}
+
+.arrow-top {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg); /* Top arrow */
+}
+
+.arrow-bottom {
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg); /* Bottom arrow */
+}
