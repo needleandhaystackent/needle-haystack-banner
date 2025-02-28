@@ -72,7 +72,7 @@ body {
     text-align: center;
     background: #3c3d3f; /* Matches "Cast Me Now" button before hover */
     padding: 8px 13px;
-    border-radius: 15px;
+    border-radius: 10px;
     animation: glowEffect 2s infinite alternate; /* Glowing animation */
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
@@ -124,7 +124,7 @@ body {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin-top: -80px;
+    margin-top: -90px;
     position: relative;
 }
 
