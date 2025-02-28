@@ -184,7 +184,7 @@ body {
     text-decoration: none;
     border-radius: 60px;
     position: absolute;
-    bottom: 25%; /* Moved up by 25% from the bottom */
+    bottom: 20%; /* Moved up by 25% from the bottom */
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.3s ease;
@@ -195,6 +195,6 @@ body {
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: scale(1.2);
+    transform: translateX(-50%);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
