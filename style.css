@@ -136,6 +136,14 @@ body {
     gap: 30px;
 }
 
+/* Glowing Animation for Stars */
+@keyframes starGlow {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
+    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+
+}
+
 /* Stars */
 .star {
     display: flex;
@@ -154,11 +162,9 @@ body {
     text-align: center;
     color: #37383a;
     background: linear-gradient(145deg, #ffde59, #e6c200);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7),
-                -5px -5px 10px rgba(255, 255, 255, 0.5),
-                inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-                inset -2px -2px 5px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Initial glow */
     border: 3px solid rgba(255, 215, 0, 0.9);
+    animation: starGlow 2s infinite alternate; /* Apply glowing animation */
 }
 
 /* Adjust emoji size & spacing */
