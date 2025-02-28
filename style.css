@@ -147,10 +147,10 @@ body {
 
 /* Star Text Positioning */
 .star .star-text {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.3;
     position: relative;
-    top: -20px;
+    top: -25px;
 }
 
 /* "Cast Me Now" Button */
