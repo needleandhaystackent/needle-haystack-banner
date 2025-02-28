@@ -68,13 +68,13 @@ body {
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 50%; /* Make it wider */
+    width: 30%; /* Make it wider */
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
     padding: 8px 13px;
     border-radius: 15px;
     animation: glowEffect 2s infinite alternate; /* Glowing animation */
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
     z-index: 2;
 }
