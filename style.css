@@ -111,7 +111,7 @@ body {
 /* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
-    background: linear-gradient(120deg, #fff9a3, #ffcc00, #ffd700, #fff9a3);
+    background: linear-gradient(120deg, #d1d1d1, #bfbfbf, #a6a6a6, #d1d1d1); /* Silver gradient */
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
