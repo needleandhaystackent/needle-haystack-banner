@@ -230,7 +230,7 @@ body {
 }
 
 .arrow-bottom {
-    bottom: 28%;
+    bottom: 23%;
     left: 50%;
     transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
