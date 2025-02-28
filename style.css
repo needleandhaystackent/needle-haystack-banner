@@ -94,14 +94,15 @@ body {
 /* Adjust emoji size */
 .star .emoji {
     font-size: 40px; /* Increases emoji size */
-    margin-bottom: 2px; /* Adds space between emoji and text */
+    margin-bottom: 0px; /* Adds space between emoji and text */
 }
 
 /* Ensure text position */
 .star .star-text {
     font-size: 20px; /* Adjust text size */
     line-height: 1.2; /* Adjusts spacing between lines */
-    margin-top: 10px; /* Moves text slightly higher */
+    position: relative;
+    top: -10px; /* Moves text UP slightly */
 }
 
 /* Positioning for Stars */
