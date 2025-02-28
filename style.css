@@ -63,13 +63,13 @@ body {
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 60%; /* Make it smaller */
+    width: 40%; /* Make it smaller */
     text-align: center;
     background: rgba(0, 0, 0, 0.6); /* Slightly transparent for creative effect */
     padding: 10px 15px; /* Reduce padding */
     border-radius: 15px; /* Rounder edges for a sleek design */
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Softer golden glow */
-    margin-top: -20px; /* Moves it up slightly */
+    margin-top: -10px; /* Moves it up slightly */
     z-index: 2;
 }
 
