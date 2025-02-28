@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
-
-/* Corrected Background Image */
 body {
     font-family: Helvetica, sans-serif;
     text-align: center;
@@ -11,22 +9,22 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 1200px; /* Matches Google Sites width */
+    max-width: 1200px;
     margin: auto;
 }
 
-/* Fix Banner Size */
+/* Banner */
 .banner {
     position: relative;
     width: 100%;
-    height: auto; /* Adjust height based on content */
+    height: auto; /* Adjusts height based on content */
     min-height: 85vh; /* Ensures it doesn't shrink */
-    max-height: none; /* Removes limit */
-    overflow: visible; /* Ensures content is not cut off */
+    max-height: none; /* Removes height limit */
+    overflow: visible; /* Ensures content isn't cut off */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Ensure content aligns to top */
-    justify-content: flex-start; /* Keeps content at the top */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Title */
@@ -39,87 +37,71 @@ body {
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7);
-
     position: absolute;
-    top: 3%;  /* Moves title closer to top */
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    white-space: nowrap; /* Ensures "Needle and Haystack" stays on one line */
+    white-space: nowrap;
 }
 
-
-/* Subtitle (Entertainment) Styling */
+/* Subtitle */
 .subtitle {
-    display: block; /* Ensures "Entertainment" appears below */
-    font-size: 35px; /* Slightly smaller */
-    font-weight: bold; /* Matches title weight */
-    color: black; /* Change this color if needed */
-    text-transform: uppercase; /* Matches title capitalization */
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
     text-shadow: 
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
-        0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
+        0px 0px 15px rgba(255, 215, 0, 0.7);
     text-align: center;
-    margin-top: 5px; /* Adjust the spacing */    
+    margin-top: 5px;
 }
 
-/* Slogan Positioning */
+/* Slogan */
 .slogan-container {
-    position: relative; /* Changed from absolute */
-    margin-top: 20px; /* Adds space below the title */
-    width: 80%; /* Keeps it contained */
+    position: relative;
+    margin-top: 20px;
+    width: 80%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
-    padding: 20px; /* Space around text */
-    border-radius: 10px; /* Rounded edges for sleek design */
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Soft gold glow */
-    z-index: 2; /* Ensures it stays above background */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    z-index: 2;
 }
 
-/* Slogan Text Styling */
 .slogan {
     font-family: 'Playfair Display', serif;
     font-size: 42px;
     font-weight: bold;
-    text-align: center;
     background: linear-gradient(145deg, #ffcc00, #ffdd44);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Black shadow for contrast */
-    filter: drop-shadow(2px 2px 6px rgba(255, 215, 0, 0.6)); /* Extra glow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(2px 2px 6px rgba(255, 215, 0, 0.6));
 }
 
-/* Subtle Shimmer Effect */
-@keyframes shimmer {
-    0% { text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5); }
-    100% { text-shadow: 2px 2px 20px rgba(255, 215, 0, 0.8); }
-}
-
-.slogan {
-    animation: shimmer 3s infinite alternate;
-}
-
-
-/* Ensure Stars Stay in Place Without Overlapping */
+/* Star Container */
 .star-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Spacing between stars */
-    margin-top: 30px; /* Pushes stars down */
-    position: relative; /* Ensures stars position naturally */
+    gap: 40px;
+    margin-top: 30px;
+    position: relative;
 }
 
-
-/* All Stars (RealityTV, GameShow, Actor, Model/Host) */
+/* Stars */
 .star {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Moves text higher in the star */
+    justify-content: center;
     width: 310px;
     height: 310px;
     clip-path: polygon(
@@ -137,47 +119,28 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
-    
 }
 
-/* Adjust emoji size */
-.star .emoji {
-    font-size: 50px; /* Increases emoji size */
-    margin-bottom: 5px; /* Adds space between emoji and text */
-}
-
-/* Ensure text position */
-.star .star-text {
-    font-size: 22px; /* Adjust text size */
-    line-height: 1.3; /* Adjusts spacing between lines */
-    position: relative;
-    top: -5px; /* Moves text UP slightly */
-}
-
-
-
-
-
-/* Call to Action Button - "Cast Me Now" */
+/* Cast Me Now Button */
 .cta-button {
     display: block;
-    background: #3c3d3f; /* Silver background */
-    color: white; /* White text */
-    font-size: 30px; /* Slightly smaller */
+    background: #3c3d3f;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
-    padding: 12px 25px; /* Adjust size */
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 60px; /* Keeps it rounded */
-    box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
-    margin-top: 60px; /* More space below stars */
-    margin-bottom: 40px; /* Adds breathing room */
+    border-radius: 60px;
+    box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
     transition: all 0.3s ease;
 }
 
-/* Hover Effect */
 .cta-button:hover {
-    background: gold; /* Turns gold on hover */
-    color: black; /* Text turns black */
+    background: gold;
+    color: black;
     transform: scale(1.2);
-    box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9); /* Glowing effect */
+    box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
