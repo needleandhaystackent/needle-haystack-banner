@@ -71,8 +71,8 @@ body {
     width: 30%; /* Make it wider */
     text-align: center;
     background: #3c3d3f; /* Matches "Cast Me Now" button before hover */
-    padding: 8px 13px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 15px;
     animation: glowEffect 2s infinite alternate; /* Glowing animation */
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
@@ -184,9 +184,9 @@ body {
     text-decoration: none;
     border-radius: 60px;
     position: absolute;
-    bottom: 20%; /* Moved up by 25% from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Moves to vertical center */
+    left: 50%; /* Moves to horizontal center */
+    transform: translate(-50%, -50%); /* Ensures it's perfectly centered */
     transition: all 0.3s ease;
     animation: glowEffect 2s infinite alternate; /* Always glowing */
 }
@@ -197,4 +197,46 @@ body {
     color: black;
     transform: translateX(-50%);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
+}
+
+
+/* Glowing Animation for Arrows */
+@keyframes arrowGlow {
+    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+}
+
+/* Arrow Base Style */
+.arrow {
+    position: absolute;
+    width: 50px; /* Arrow size */
+    height: 50px;
+    color: #3c3d3f; /* Matches button */
+    font-size: 50px;
+    animation: arrowGlow 2s infinite alternate; /* Glowing effect */
+
+/* Position Arrows (Using Unicode Arrows) */
+.arrow-left {
+    top: 40%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.arrow-right {
+    top: 40%;
+    right: 20%;
+    transform: rotate(45deg);
+}
+
+.arrow-top {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-bottom {
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
 }
