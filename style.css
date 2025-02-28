@@ -101,7 +101,7 @@ body {
         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
         2% 35%, 39% 35%);
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     color: #37383a;
@@ -114,10 +114,10 @@ body {
 }
 
 /* Positioning for Stars */
-.realitytv { top: 20%; left: 15%; transform: translateX(-50%); }
-.gameshow { top: 50%; left: 15%; transform: translateX(-50%); }
-.actor { top: 20%; right: 15%; transform: translateX(50%); }
-.model-host { top: 50%; right: 15%; transform: translateX(50%); }
+.realitytv { top: 15%; left: 10%; transform: translateX(-50%); }
+.gameshow { top: 45%; left: 10%; transform: translateX(-50%); }
+.actor { top: 15%; right: 10%; transform: translateX(50%); }
+.model-host { top: 45%; right: 10%; transform: translateX(50%); }
 
 
 
