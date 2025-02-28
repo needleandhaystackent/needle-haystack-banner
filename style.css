@@ -68,15 +68,17 @@ body {
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 30%;
+    width: auto; /* Adjusts width to fit content */
     text-align: center;
     background: #3c3d3f; /* Matches "Cast Me Now" button before hover */
-    padding: 5px 15px;
+    padding: 5px 20px;
     border-radius: 15px;
     animation: glowEffect 2s infinite alternate;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
     z-index: 2;
+    display: inline-block; /* Shrinks box to text width */
+    line-height: 1.2; /* Ensures text fits properly */
 }
 
 /* Main slogan text */
