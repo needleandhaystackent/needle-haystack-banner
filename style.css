@@ -58,7 +58,7 @@ body {
     margin-top: -30px;
 }
 
-/* Glowing Animation for Stars & Button */
+/* Glowing Animation */
 @keyframes glowEffect {
     0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
     50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
@@ -98,16 +98,6 @@ body {
     100% { background-position: 100%; }
 }
 
-/* We Find the Needles - Make it Smaller and Below */
-.slogan-subtext {
-    font-size: 22px;
-    font-weight: 400;
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    display: block;
-    margin-top: 5px;
-}
-
 /* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
@@ -144,10 +134,6 @@ body {
     justify-content: center;
     width: 290px;
     height: 290px;
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
-        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
-        2% 35%, 39% 35%);
     font-family: 'Merriweather', serif;
     font-size: 20px;
     font-weight: bold;
@@ -157,12 +143,6 @@ body {
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     border: 3px solid rgba(255, 215, 0, 0.9);
     animation: glowEffect 2s infinite alternate;
-}
-
-/* Adjust emoji size & spacing */
-.star .emoji {
-    font-size: 40px;
-    margin-bottom: 2px;
 }
 
 /* "Cast Me Now" Button - Glowing Effect */
@@ -187,11 +167,18 @@ body {
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
-/* FIX: Properly Close `.arrow` Class */
+/* 🔥 Glowing Animation for Arrows */
+@keyframes arrowGlow {
+    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+}
+
+/* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
     width: 50px;
@@ -200,3 +187,9 @@ body {
     font-size: 50px;
     animation: arrowGlow 2s infinite alternate;
 }
+
+/* Proper Arrow Positioning */
+.arrow-left { top: 50%; left: 20%; transform: translateY(-50%) rotate(180deg); }
+.arrow-right { top: 50%; right: 20%; transform: translateY(-50%); }
+.arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(-90deg); }
+.arrow-bottom { bottom: 15%; left: 50%; transform: translateX(-50%) rotate(90deg); }
