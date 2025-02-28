@@ -214,7 +214,25 @@ body {
 }
 
 /* 🔹 Arrows Now Point **Directly** at the Button */
-.arrow-left { top: 50%; left: 30%; transform: rotate(-135deg); }
-.arrow-right { top: 50%; right: 30%; transform: rotate(45deg); }
-.arrow-top { top: 35%; left: 50%; transform: translateX(-50%) rotate(-135deg); }
-.arrow-bottom { bottom: 35%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
+.arrow-left { 
+    top: 50%; 
+    left: 25%; 
+    transform: translateY(-50%) rotate(0deg); /* Points right */
+}
+
+.arrow-right { 
+    top: 50%; 
+    right: 25%; 
+    transform: translateY(-50%) rotate(180deg); /* Points left */
+}
+
+.arrow-top { 
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(90deg); /* Points downward */
+}
+
+.arrow-bottom { 
+    bottom: 30%; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(-90deg); /* Points upward */
