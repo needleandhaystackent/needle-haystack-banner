@@ -64,9 +64,9 @@ body {
     margin-top: 5px; /* Adjust the spacing */    
 }
 
-
+/* Slogan Positioning */
 .slogan-container {
-    position: relative; /* Change from absolute to relative */
+    position: relative; /* Changed from absolute */
     margin-top: 20px; /* Adds space below the title */
     width: 80%; /* Keeps it contained */
     text-align: center;
@@ -106,7 +106,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between stars */
+    align-items: center;
+    gap: 40px; /* Spacing between stars */
     margin-top: 30px; /* Pushes stars down */
     position: relative; /* Ensures stars position naturally */
     z-index: 1; /* Keeps them in layer order */
@@ -137,20 +138,22 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
+    padding-top: 15px; /* Adjusts vertical text positioning */
+    
 }
 
 /* Adjust emoji size */
 .star .emoji {
-    font-size: 40px; /* Increases emoji size */
-    margin-bottom: 0px; /* Adds space between emoji and text */
+    font-size: 50px; /* Increases emoji size */
+    margin-bottom: 5px; /* Adds space between emoji and text */
 }
 
 /* Ensure text position */
 .star .star-text {
-    font-size: 20px; /* Adjust text size */
-    line-height: 1.2; /* Adjusts spacing between lines */
+    font-size: 22px; /* Adjust text size */
+    line-height: 1.3; /* Adjusts spacing between lines */
     position: relative;
-    top: -20px; /* Moves text UP slightly */
+    top: -5px; /* Moves text UP slightly */
 }
 
 /* Positioning for Stars */
@@ -165,7 +168,7 @@ body {
 
 /* Call to Action Button - "Cast Me Now" */
 .cta-button {
-    display: inline-block;
+    display: block;
     background: #3c3d3f; /* Silver background */
     color: white; /* White text */
     font-size: 30px; /* Slightly smaller */
@@ -174,7 +177,6 @@ body {
     text-decoration: none;
     border-radius: 60px; /* Keeps it rounded */
     box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
-    
     position: relative; /* Change from absolute to relative */
     margin: 40px auto; /* Adds space below the stars */
     transition: all 0.3s ease;
