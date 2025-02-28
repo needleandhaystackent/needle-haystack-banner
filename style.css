@@ -68,12 +68,12 @@ body {
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 30%; /* Make it wider */
+    width: 30%;
     text-align: center;
     background: #3c3d3f; /* Matches "Cast Me Now" button before hover */
     padding: 5px 15px;
     border-radius: 15px;
-    animation: glowEffect 2s infinite alternate; /* Glowing animation */
+    animation: glowEffect 2s infinite alternate;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     margin-top: -1px;
     z-index: 2;
@@ -111,7 +111,7 @@ body {
 /* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
-    background: linear-gradient(120deg, #d1d1d1, #bfbfbf, #a6a6a6, #d1d1d1); /* Silver gradient */
+    background: linear-gradient(120deg, #d1d1d1, #bfbfbf, #a6a6a6, #d1d1d1);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -156,21 +156,13 @@ body {
     background: linear-gradient(145deg, #ffde59, #e6c200);
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
     border: 3px solid rgba(255, 215, 0, 0.9);
-    animation: glowEffect 2s infinite alternate; /* Apply glowing animation */
+    animation: glowEffect 2s infinite alternate;
 }
 
 /* Adjust emoji size & spacing */
 .star .emoji {
     font-size: 40px;
     margin-bottom: 2px;
-}
-
-/* Star Text Positioning */
-.star .star-text {
-    font-size: 18px;
-    line-height: 1.2;
-    position: relative;
-    top: -30px;
 }
 
 /* "Cast Me Now" Button - Glowing Effect */
@@ -184,59 +176,27 @@ body {
     text-decoration: none;
     border-radius: 60px;
     position: absolute;
-    top: 50%; /* Moves to vertical center */
-    left: 50%; /* Moves to horizontal center */
-    transform: translate(-50%, -50%); /* Ensures it's perfectly centered */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 0.3s ease;
-    animation: glowEffect 2s infinite alternate; /* Always glowing */
+    animation: glowEffect 2s infinite alternate;
 }
 
 /* Hover Effect for Button */
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
-
-/* Glowing Animation for Arrows */
-@keyframes arrowGlow {
-    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-}
-
-/* Arrow Base Style */
+/* FIX: Properly Close `.arrow` Class */
 .arrow {
     position: absolute;
-    width: 50px; /* Arrow size */
+    width: 50px;
     height: 50px;
-    color: #3c3d3f; /* Matches button */
+    color: #3c3d3f;
     font-size: 50px;
-    animation: arrowGlow 2s infinite alternate; /* Glowing effect */
-
-/* Position Arrows (Using Unicode Arrows) */
-.arrow-left {
-    top: 40%;
-    left: 20%;
-    transform: rotate(-45deg);
-}
-
-.arrow-right {
-    top: 40%;
-    right: 20%;
-    transform: rotate(45deg);
-}
-
-.arrow-top {
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.arrow-bottom {
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%) rotate(180deg);
+    animation: arrowGlow 2s infinite alternate;
 }
