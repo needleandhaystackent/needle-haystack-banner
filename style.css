@@ -17,14 +17,13 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: auto;
-    min-height: 85vh;
-    max-height: none;
-    overflow: visible;
+    height: 85vh;
+    max-height: 900px; /* Prevents it from stretching too much */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 /* Title */
@@ -67,17 +66,13 @@ body {
 
 /* Slogan */
 .slogan-container {
-    position: relative;
-    display: inline-block; /* Shrink-wraps the box to fit the text */
-    max-width: fit-content; /* Prevents extra space */
-    text-align: center;
-    background: #3c3d3f; /* Matches "Cast Me Now" button */
-    padding: 5px 15px; /* Reduced padding to tighten box */
+    display: inline-block;
+    width: auto; /* Allows flexibility */
+    padding: 8px 20px;
     border-radius: 15px;
-    animation: glowEffect 2s infinite alternate;
+    text-align: center;
+    background: #3c3d3f;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-    line-height: 1.1; /* Tighter spacing for better fit */
-    white-space: normal; /* Allows text to wrap naturally */
 }
 
 /* 🔥 Further Force Box to Match Text */
@@ -122,7 +117,7 @@ body {
 .star-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows stars to reposition on smaller screens */
+    flex-wrap: nowrap; /* Allows stars to reposition on smaller screens */
     width: 90%;
     max-width: 1200px;
     margin-top: -110px;
@@ -176,21 +171,26 @@ body {
     animation: glowEffect 2s infinite alternate;
 }
 
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 /* "Cast Me Now" Button - Glowing Effect */
 .cta-button {
-    display: block;
     background: #3c3d3f;
     color: white;
-    font-size: clamp(20px, 4vw, 50px); /* Scales text dynamically */
+    font-size: clamp(20px, 4vw, 50px);
     font-weight: bold;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
     animation: glowEffect 2s infinite alternate;
 }
 
@@ -212,13 +212,10 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 50px; /* Arrow width */
-    height: 50px; /* Arrow height */
-    background: transparent;
-    font-size: 50px;
-    border: #3c3d3f; /* Matches button color */
-    border-style: solid;
-    border-width: 12px 12px 0 0; /* Creates the diagonal arrow shape */
+    width: 5vw; /* Scale dynamically */
+    height: 5vw; /* Scale dynamically */
+    border: solid #3c3d3f;
+    border-width: 12px 12px 0 0; /* Creates diagonal arrow */
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
@@ -226,25 +223,25 @@ body {
 
 /* 🔹 Position Arrows (All Point to the Center Button) */
 .arrow-left {
-    top: 55%;
-    left: 27%;
+    top: 50%;
+    left: 20%;
     transform: translateY(-50%) rotate(45deg); /* Left arrow */
 }
 
 .arrow-right {
-    top: 55%;
-    right: 27%;
+    top: 50%;
+    right: 20%;
     transform: translateY(-50%) rotate(-135deg); /* Right arrow */
 }
 
 .arrow-top {
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) rotate(135deg); /* Top arrow */
 }
 
 .arrow-bottom {
-    bottom: 20%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
