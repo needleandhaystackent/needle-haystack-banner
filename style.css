@@ -101,7 +101,7 @@ body {
 .star .star-text {
     font-size: 20px; /* Adjust text size */
     line-height: 1.2; /* Adjusts spacing between lines */
-    margin-top: 2px; /* Moves text slightly higher */
+    margin-bottom: 2px; /* Moves text slightly higher */
 }
 
 /* Positioning for Stars */
