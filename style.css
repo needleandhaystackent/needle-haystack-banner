@@ -212,25 +212,25 @@ body {
 
 /* 🔹 Position Arrows (All Point to the Center Button) */
 .arrow-left {
-    top: 56%;
+    top: 54%;
     left: 27%;
     transform: translateY(-50%) rotate(45deg); /* Left arrow */
 }
 
 .arrow-right {
-    top: 56%;
+    top: 54%;
     right: 27%;
     transform: translateY(-50%) rotate(-135deg); /* Right arrow */
 }
 
 .arrow-top {
-    top: 27%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%) rotate(135deg); /* Top arrow */
 }
 
 .arrow-bottom {
-    bottom: 27%;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
