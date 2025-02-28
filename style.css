@@ -126,6 +126,21 @@ body {
     gap: 30px;
 }
 
+/* 🔹 Customize Emoji & Text Size Inside Stars */
+.star .emoji {
+    font-size: 50px; /* Adjust emoji size */
+    margin-bottom: 5px;
+}
+
+.star .star-text {
+    font-size: 22px; /* Adjust text size */
+    line-height: 1.3;
+    position: relative;
+    top: -15px;
+
+}
+
+
 /* Stars - Now with Glowing Animation */
 .star {
     display: flex;
@@ -197,25 +212,25 @@ body {
 
 /* 🔹 Position Arrows (All Point to the Center Button) */
 .arrow-left {
-    top: 50%;
-    left: 28%;
+    top: 53%;
+    left: 26%;
     transform: translateY(-50%) rotate(45deg); /* Left arrow */
 }
 
 .arrow-right {
-    top: 50%;
-    right: 28%;
+    top: 53%;
+    right: 26%;
     transform: translateY(-50%) rotate(-135deg); /* Right arrow */
 }
 
 .arrow-top {
-    top: 38%;
+    top: 32%;
     left: 50%;
     transform: translateX(-50%) rotate(135deg); /* Top arrow */
 }
 
 .arrow-bottom {
-    bottom: 20%;
+    bottom: 22%;
     left: 50%;
     transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
