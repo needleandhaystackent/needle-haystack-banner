@@ -60,22 +60,21 @@ body {
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
-    text-align: center;
+    text-align: center;a
     margin-top: 5px; /* Adjust the spacing */    
 }
 
 
 .slogan-container {
-    position: absolute;
-    top: 50%; /* Adjusted to center vertically */
-    left: 50%;
-    transform: translate(-50%, -10%); /* Moves it slightly lower */
+    position: relative; /* Change from absolute to relative */
+    margin-top: 20px; /* Adds space below the title */
     width: 80%; /* Keeps it contained */
     text-align: center;
     background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
     padding: 20px; /* Space around text */
     border-radius: 10px; /* Rounded edges for sleek design */
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Soft gold glow */
+    z-index: 2; /* Ensures it stays above background */
 }
 
 /* Slogan Text Styling */
@@ -102,12 +101,21 @@ body {
 }
 
 
-
+/* Ensure Stars Stay in Place Without Overlapping */
+.star-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Spacing between stars */
+    margin-top: 30px; /* Pushes stars down */
+    position: relative; /* Ensures stars position naturally */
+    z-index: 1; /* Keeps them in layer order */
+}
 
 
 /* All Stars (RealityTV, GameShow, Actor, Model/Host) */
 .star {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,17 +175,15 @@ body {
     border-radius: 60px; /* Keeps it rounded */
     box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
     
-    position: absolute;
-    top: 90%; /* higher the number, lower to page */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Ensures centering */
-    transition: all 0.3s ease; /* Smooth animation */
+    position: relative; /* Change from absolute to relative */
+    margin: 40px auto; /* Adds space below the stars */
+    transition: all 0.3s ease;
 }
 
 /* Hover Effect */
 .cta-button:hover {
     background: gold; /* Turns gold on hover */
     color: black; /* Text turns black */
-    transform: translate(-50%, -50%) scale(1.5); /* Grows but stays centered */
+    transform: scale(1.2);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9); /* Glowing effect */
 }
