@@ -74,7 +74,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     position: absolute;
-    top: 23%; /* Moves it just below "Entertainment" */
+    top: 23%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -152,7 +152,7 @@ body {
 
 /* 🔹 Adjust Text & Emojis in Stars */
 .star .emoji {
-    font-size: 60px; /* Made bigger */
+    font-size: 60px;
     margin-bottom: 8px;
 }
 
@@ -160,7 +160,7 @@ body {
     font-size: 18px;
     line-height: 1.2;
     position: relative;
-    top: -30px; /* Moves text up */
+    top: -30px;
 }
 
 /* 🔹 Cast Me Now Button (Perfect Center) */
@@ -198,15 +198,15 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    border: solid #ffd700;
+    width: 60px;
+    height: 60px;
+    border: solid #3c3d3f; /* Same color as button */
     border-width: 10px 10px 0 0;
     transform-origin: center;
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Position Arrows */
+/* 🔹 Position Arrows (Pointing Perfectly to Button) */
 .arrow-left { top: 50%; left: 30%; transform: rotate(135deg); }
 .arrow-right { top: 50%; right: 30%; transform: rotate(-45deg); }
 .arrow-top { top: 40%; left: 50%; transform: translateX(-50%) rotate(225deg); }
