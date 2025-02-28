@@ -70,7 +70,7 @@ body {
     position: relative;
     width: 30%; /* Make it wider */
     text-align: center;
-    background: rgba(0, 0, 0, 0.85);
+    background: #3c3d3f; /* Matches "Cast Me Now" button before hover */
     padding: 8px 13px;
     border-radius: 15px;
     animation: glowEffect 2s infinite alternate; /* Glowing animation */
