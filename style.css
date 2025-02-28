@@ -114,10 +114,10 @@ body {
 }
 
 /* Positioning for Stars */
-.realitytv { top: 10%; left: 12%; transform: translateX(-50%); }
-.gameshow { top: 75%; left: 12%; transform: translateX(-50%); }
-.actor { top: 10%; right: 12%; transform: translateX(50%); }
-.model-host { top: 75%; right: 12%; transform: translateX(50%); }
+.realitytv { top: 8%; left: 12%; transform: translateX(-50%); }
+.gameshow { top: 55%; left: 12%; transform: translateX(-50%); }
+.actor { top: 8%; right: 12%; transform: translateX(50%); }
+.model-host { top: 55%; right: 12%; transform: translateX(50%); }
 
 
 
