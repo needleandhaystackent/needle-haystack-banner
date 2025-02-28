@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 310px;
     height: 310px;
     clip-path: polygon(
@@ -89,25 +89,27 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
+    padding-top: 10px; /* Moves content slightly lower */
 }
 
 /* Increase emoji size */
 .star .emoji {
     font-size: 40px; /* Increases emoji size */
-    margin-bottom: 2px; /* Adds space between emoji and text */
+    margin-bottom: 0.5px; /* Adds space between emoji and text */
 }
 
 /* Ensure text inside stars stays centered */
 .star .star-text {
     font-size: 20px; /* Adjust text size */
     line-height: 1.2; /* Adjusts spacing between lines */
+    margin-top: 5px; /* Moves text slightly lower */
 }
 
 /* Positioning for Stars */
-.realitytv { top: 6%; left: 12%; transform: translateX(-50%); }
-.gameshow { top: 53%; left: 12%; transform: translateX(-50%); }
-.actor { top: 6%; right: 12%; transform: translateX(50%); }
-.model-host { top: 53%; right: 12%; transform: translateX(50%); }
+.realitytv { top:8%; left: 12%; transform: translateX(-50%); }
+.gameshow { top: 55%; left: 12%; transform: translateX(-50%); }
+.actor { top: 8%; right: 12%; transform: translateX(50%); }
+.model-host { top: 55%; right: 12%; transform: translateX(50%); }
 
 
 
