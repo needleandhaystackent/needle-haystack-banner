@@ -208,14 +208,14 @@ body {
     width: 6vw;
     height: 6vw;
     border: solid #3c3d3f;
-    border-width: 12px 12px 0 0;
+    border-width: 8px 18x 0 0;
     display: block;
     padding: 10px;
     animation: arrowGlow 2s infinite alternate;
 }
 
 /* 🔹 Position Arrows (All Evenly Pointing to Button) */
-.arrow-left { top: 50%; left: 25%; transform: rotate(45deg); }
-.arrow-right { top: 50%; right: 25%; transform: rotate(-135deg); }
+.arrow-left { top: 50%; left: 28%; transform: rotate(45deg); }
+.arrow-right { top: 50%; right: 28%; transform: rotate(-135deg); }
 .arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(135deg); }
 .arrow-bottom { bottom: 25%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
