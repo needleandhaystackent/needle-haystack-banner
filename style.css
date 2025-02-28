@@ -69,7 +69,7 @@ body {
     padding: 10px 15px; /* Reduce padding */
     border-radius: 15px; /* Rounder edges for a sleek design */
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Softer golden glow */
-    margin-top: -10px; /* Moves it up slightly */
+    margin-top: -5px; /* Moves it up slightly */
     z-index: 2;
 }
 
