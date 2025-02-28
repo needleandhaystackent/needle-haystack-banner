@@ -94,8 +94,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 68% 57%, 
         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
@@ -114,10 +114,10 @@ body {
 }
 
 /* Positioning for Stars */
-.realitytv { top: 30%; left: 20%; transform: translateX(-50%); }
-.gameshow { top: 50%; left: 20%; transform: translateX(-50%); }
-.actor { top: 30%; right: 20%; transform: translateX(50%); }
-.model-host { top: 50%; right: 20%; transform: translateX(50%); }
+.realitytv { top: 20%; left: 15%; transform: translateX(-50%); }
+.gameshow { top: 50%; left: 15%; transform: translateX(-50%); }
+.actor { top: 20%; right: 15%; transform: translateX(50%); }
+.model-host { top: 50%; right: 15%; transform: translateX(50%); }
 
 
 
