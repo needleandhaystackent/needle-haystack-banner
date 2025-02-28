@@ -89,7 +89,6 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
-    padding-top: 5px; /* Moves content slightly lower */
 }
 
 /* Adjust emoji size */
@@ -102,7 +101,7 @@ body {
 .star .star-text {
     font-size: 20px; /* Adjust text size */
     line-height: 1.2; /* Adjusts spacing between lines */
-    margin-top: 2px; /* Moves text slightly lower */
+    margin-top: 2px; /* Moves text slightly higher */
 }
 
 /* Positioning for Stars */
