@@ -94,15 +94,16 @@ body {
 
 /* "We Find the Needles" - Make "Needles" Shine */
 @keyframes shine {
-    0% { background-position: 0%; }
-    100% { background-position: 100%; }
+    0% { background-position: 0%; filter: brightness(1); }
+    50% { background-position: 100%; filter: brightness(1.5); } /* Increased brightness */
+    100% { background-position: 0%; filter: brightness(1); }
 }
 
 /* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
-    font-size: 28px; /* Increased size */
-    background: linear-gradient(120deg, #d1d1d1, #bfbfbf, #a6a6a6, #d1d1d1); /* Silver gradient */
+    font-size: 32px; /* Increased size */
+    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff); /* Brighter silver gradient */
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,7 +232,7 @@ body {
 }
 
 .arrow-bottom {
-    bottom: 21%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
 }
