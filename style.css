@@ -38,7 +38,7 @@ body {
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7);
     position: relative;
-     margin-top: 20px; /* Adjust spacing to move it down */
+    margin-top: 20px;
     text-align: center;
     white-space: nowrap;
 }
@@ -63,35 +63,33 @@ body {
     0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
     50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
     100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-
+} /* <-- Closing the keyframes correctly */
 
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 20%; /* Make it smaller */
+    width: 50%; /* Make it wider */
     text-align: center;
-    background: rgba(0, 0, 0, 0.3); /* Slightly transparent for creative effect */
-    padding: 8px 13px; /* Reduce padding */
-    border-radius: 15px; /* Rounder edges for a sleek design */
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 13px;
+    border-radius: 15px;
     animation: glow 2s infinite alternate; /* Glowing animation */
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Softer golden glow */
-    margin-top: -1px; /* Moves it up slightly */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    margin-top: -1px;
     z-index: 2;
-
-
-}
+} /* <-- Closing the .slogan-container correctly */
 
 /* Main slogan text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: 26px; /* Reduce size */
+    font-size: 26px;
     font-weight: bold;
-    background: linear-gradient(145deg, #ffcc00, #ffdd44); /* Gold gradient */
+    background: linear-gradient(145deg, #ffcc00, #ffdd44);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stronger contrast */
-    letter-spacing: 1px; /* Slightly spaced for elegance */
-    line-height: 1.2; /* Improve readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 /* "We Find the Needles" - Make "Needles" Shine */
@@ -100,18 +98,17 @@ body {
     100% { background-position: 100%; }
 }
 
-
-
 /* We Find the Needles - Make it Smaller and Below */
 .slogan-subtext {
-    font-size: 22px; /* Slightly smaller */
+    font-size: 22px;
     font-weight: 400;
-    color: #ffcc00; /* Gold text for emphasis */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* More defined */
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     display: block;
     margin-top: 5px;
+} /* <-- Correctly closing .slogan-subtext */
 
-    /* Special Shiny Effect for "Needles" */
+/* Special Shiny Effect for "Needles" */
 .slogan-subtext .shiny {
     font-weight: bold;
     background: linear-gradient(120deg, #fff9a3, #ffcc00, #ffd700, #fff9a3);
@@ -127,7 +124,7 @@ body {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin-top: -40px; /* Move stars up */
+    margin-top: -40px;
     position: relative;
 }
 
@@ -136,7 +133,7 @@ body {
 .right-stars {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Space between stars */
+    gap: 30px;
 }
 
 /* Stars */
