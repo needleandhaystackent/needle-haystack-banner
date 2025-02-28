@@ -19,17 +19,17 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 85vh; /* Full height of the viewport */
-    max-height: 800px; /* Ensures it doesn’t stretch too tall */
-    overflow: hidden;
-    opacity: 0.9;
+    height: auto; /* Adjust height based on content */
+    min-height: 85vh; /* Ensures it doesn't shrink */
+    max-height: none; /* Removes limit */
+    overflow: visible; /* Ensures content is not cut off */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Ensure content aligns to top */
     justify-content: flex-start; /* Keeps content at the top */
 }
 
-/* Move Title Higher */
+/* Title */
 .title {
     font-size: 50px;
     font-weight: bold;
@@ -60,7 +60,7 @@ body {
         3px 3px 6px rgba(0, 0, 0, 0.8),
         -3px -3px 6px rgba(255, 255, 255, 0.6),
         0px 0px 15px rgba(255, 215, 0, 0.7); /* Matches title glow */
-    text-align: center;a
+    text-align: center;
     margin-top: 5px; /* Adjust the spacing */    
 }
 
@@ -110,7 +110,6 @@ body {
     gap: 40px; /* Spacing between stars */
     margin-top: 30px; /* Pushes stars down */
     position: relative; /* Ensures stars position naturally */
-    z-index: 1; /* Keeps them in layer order */
 }
 
 
@@ -138,7 +137,6 @@ body {
                 inset 2px 2px 5px rgba(0, 0, 0, 0.5),
                 inset -2px -2px 5px rgba(255, 255, 255, 0.4);
     border: 3px solid rgba(255, 215, 0, 0.9);
-    padding-top: 15px; /* Adjusts vertical text positioning */
     
 }
 
@@ -156,12 +154,6 @@ body {
     top: -5px; /* Moves text UP slightly */
 }
 
-/* Positioning for Stars */
-.realitytv { top:8%; left: 14%; transform: translateX(-50%); }
-.gameshow { top: 55%; left: 14%; transform: translateX(-50%); }
-.actor { top: 8%; right: 14%; transform: translateX(50%); }
-.model-host { top: 55%; right: 14%; transform: translateX(50%); }
-
 
 
 
@@ -177,8 +169,8 @@ body {
     text-decoration: none;
     border-radius: 60px; /* Keeps it rounded */
     box-shadow: 10px 5px 14px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
-    position: relative; /* Change from absolute to relative */
-    margin: 40px auto; /* Adds space below the stars */
+    margin-top: 60px; /* More space below stars */
+    margin-bottom: 40px; /* Adds breathing room */
     transition: all 0.3s ease;
 }
 
