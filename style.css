@@ -166,7 +166,7 @@ body {
 /* 🔹 Cast Me Now Button (Perfect Center) */
 .cta-container {
     position: absolute;
-    top: -25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -195,26 +195,19 @@ body {
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
-/* 🔹 Glowing Arrows */
-@keyframes arrowGlow {
-    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-}
-
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 30px;
-    height: 40px;
-    border: solid #3c3d3f;
-    border-width: 10px 10x 0 0;
+    width: 50px;
+    height: 50px;
+    border: solid #ffd700;
+    border-width: 10px 10px 0 0;
     transform-origin: center;
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Position Arrows (All Evenly Pointing to Button) */
-.arrow-left { top: 50%; left: 28%; transform: rotate(45deg); }
-.arrow-right { top: 50%; right: 28%; transform: rotate(-135deg); }
-.arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(135deg); }
-.arrow-bottom { bottom: 25%; left: 50%; transform: translateX(-50%) rotate(-45deg); }
+/* 🔹 Position Arrows */
+.arrow-left { top: 50%; left: 30%; transform: rotate(135deg); }
+.arrow-right { top: 50%; right: 30%; transform: rotate(-45deg); }
+.arrow-top { top: 40%; left: 50%; transform: translateX(-50%) rotate(225deg); }
+.arrow-bottom { bottom: 40%; left: 50%; transform: translateX(-50%) rotate(45deg); }
