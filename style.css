@@ -17,9 +17,9 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 85vh;
-    max-height: 900px; /* Prevents it from stretching too much */
-    overflow: hidden;
+    min-height: 85vh; /* Ensures it's not too small */
+    max-height: 900px;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,11 +67,11 @@ body {
 /* Slogan */
 .slogan-container {
     display: inline-block;
-    width: auto; /* Allows flexibility */
-    padding: 8px 20px;
-    border-radius: 15px;
+    max-width: 80vw; /* Prevents stretching */
     text-align: center;
     background: #3c3d3f;
+    padding: 8px 20px;
+    border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
@@ -172,13 +172,12 @@ body {
 }
 
 .cta-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100px; /* Ensures proper space */
 }
 
 
@@ -198,7 +197,7 @@ body {
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1); /* No longer affects layout */
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
@@ -223,25 +222,23 @@ body {
 
 /* 🔹 Position Arrows (All Point to the Center Button) */
 .arrow-left {
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%) rotate(45deg); /* Left arrow */
+    top: 48%;
+    left: 18%;
 }
 
 .arrow-right {
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%) rotate(-135deg); /* Right arrow */
+    top: 48%;
+    right: 18%;
 }
 
 .arrow-top {
-    top: 20%;
+    top: 18%;
     left: 50%;
-    transform: translateX(-50%) rotate(135deg); /* Top arrow */
+    transform: translateX(-50%) rotate(135deg);
 }
 
 .arrow-bottom {
-    bottom: 15%;
+    bottom: 18%;
     left: 50%;
-    transform: translateX(-50%) rotate(-45deg); /* Bottom arrow */
+    transform: translateX(-50%) rotate(-45deg);
 }
