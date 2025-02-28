@@ -58,31 +58,49 @@ body {
     margin-top: -30px;
 }
 
+/* Slogan Box - Animated Glowing Effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+
+
 /* Slogan */
 .slogan-container {
     position: relative;
-    width: 40%; /* Make it smaller */
+    width: 20%; /* Make it smaller */
     text-align: center;
-    background: rgba(0, 0, 0, 0.6); /* Slightly transparent for creative effect */
-    padding: 10px 15px; /* Reduce padding */
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent for creative effect */
+    padding: 8px 13px; /* Reduce padding */
     border-radius: 15px; /* Rounder edges for a sleek design */
+    animation: glow 2s infinite alternate; /* Glowing animation */
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Softer golden glow */
-    margin-top: -5px; /* Moves it up slightly */
+    margin-top: -1px; /* Moves it up slightly */
     z-index: 2;
+
+
 }
 
 /* Main slogan text */
 .slogan {
     font-family: 'Playfair Display', serif;
-    font-size: 28px; /* Reduce size */
+    font-size: 26px; /* Reduce size */
     font-weight: bold;
     background: linear-gradient(145deg, #ffcc00, #ffdd44); /* Gold gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Stronger contrast */
-    letter-spacing: 1.5px; /* Slightly spaced for elegance */
+    letter-spacing: 1px; /* Slightly spaced for elegance */
     line-height: 1.2; /* Improve readability */
 }
+
+/* "We Find the Needles" - Make "Needles" Shine */
+@keyframes shine {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+
+
 
 /* We Find the Needles - Make it Smaller and Below */
 .slogan-subtext {
@@ -92,6 +110,15 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* More defined */
     display: block;
     margin-top: 5px;
+
+    /* Special Shiny Effect for "Needles" */
+.slogan-subtext .shiny {
+    font-weight: bold;
+    background: linear-gradient(120deg, #fff9a3, #ffcc00, #ffd700, #fff9a3);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite alternate;
 }
 
 /* Star Container */
@@ -100,7 +127,7 @@ body {
     justify-content: space-between;
     width: 90%;
     max-width: 1200px;
-    margin-top: -30px; /* Move stars up */
+    margin-top: -40px; /* Move stars up */
     position: relative;
 }
 
@@ -118,8 +145,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 310px;
-    height: 310px;
+    width: 290px;
+    height: 290px;
     clip-path: polygon(
         50% 0%, 61% 35%, 98% 35%, 68% 57%, 
         79% 91%, 50% 70%, 21% 91%, 32% 57%, 
@@ -145,10 +172,10 @@ body {
 
 /* Star Text Positioning */
 .star .star-text {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.2;
     position: relative;
-    top: -25px;
+    top: -30px;
 }
 
 /* "Cast Me Now" Button */
