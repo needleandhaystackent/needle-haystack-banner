@@ -212,13 +212,13 @@ body {
 .arrow-left { 
     top: 50%; 
     left: 25%; 
-    transform: translateY(-50%) rotate(0%deg); /* Points Right → */
+    transform: translateY(-50%) rotate(45%deg); /* Points Right → */
 }
 
 .arrow-right { 
     top: 50%; 
     right: 25%; 
-    transform: translateY(-50%) rotate(135deg); /* Points Left ← */
+    transform: translateY(-50%) rotate(85deg); /* Points Left ← */
 }
 
 .arrow-top { 
