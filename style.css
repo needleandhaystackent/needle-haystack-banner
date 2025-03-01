@@ -163,9 +163,10 @@ body {
     top: -30px;
 }
 
+/* 🔹 Cast Me Now Button - Moved Down */
 .cta-button {
     position: absolute;
-    top: 50%;
+    top: 55%; /* Moved down from 50% to 55% */
     left: 50%;
     transform: translate(-50%, -50%);
     background: #3c3d3f;
@@ -203,18 +204,18 @@ body {
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Left Arrow - Points Right → (Moved Closer & Made Bigger) */
+/* 🔹 Left Arrow - Points Right → (Moved Down) */
 .arrow-left { 
-    top: 50%; 
+    top: 55%; /* Moved down from 50% to 55% */
     left: 30%;  /* Moves it closer */
     transform: translateY(-50%);
     border-width: 20px 0 20px 35px; /* Bigger Arrow */
     border-color: transparent transparent transparent #3c3d3f;
 }
 
-/* 🔹 Right Arrow - Points Left ← (Moved Closer & Made Bigger) */
+/* 🔹 Right Arrow - Points Left ← (Moved Down) */
 .arrow-right { 
-    top: 50%; 
+    top: 55%; /* Moved down from 50% to 55% */
     right: 30%;  /* Moves it closer */
     transform: translateY(-50%);
     border-width: 20px 35px 20px 0; /* Bigger Arrow */
