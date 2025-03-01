@@ -16,6 +16,15 @@ html, body {
     overflow-x: hidden; /* Prevent Side Scrolling */
 }
 
+site-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header {
+    width: 100vw !important;
+  }
+
+
 /* 🔹 Ensure Banner & Header Cover Full Screen */
 .banner {
     position: absolute;
