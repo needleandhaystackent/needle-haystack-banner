@@ -219,7 +219,7 @@ body > div:first-child {
 /* 🔹 Left Arrow - Points Right → (Bigger & Closer) */
 .arrow-left { 
     top: 55%; /* Slightly lower */
-    left: 30%;  /* Moves it closer */
+    left: 33%;  /* Moves it closer */
     transform: translateY(-50%);
     border-width: 25px 0 25px 45px; /* Bigger Arrow */
     border-color: transparent transparent transparent #3c3d3f;
@@ -228,7 +228,7 @@ body > div:first-child {
 /* 🔹 Right Arrow - Points Left ← (Bigger & Closer) */
 .arrow-right { 
     top: 55%; /* Slightly lower */
-    right: 30%;  /* Moves it closer */
+    right: 33%;  /* Moves it closer */
     transform: translateY(-50%);
     border-width: 25px 45px 25px 0; /* Bigger Arrow */
     border-color: transparent #3c3d3f transparent transparent;
