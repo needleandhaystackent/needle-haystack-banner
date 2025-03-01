@@ -177,7 +177,10 @@ body {
 }
 
 .cta-button {
-    .cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #3c3d3f;
     color: white;
     font-size: clamp(20px, 3vw, 50px);
@@ -187,15 +190,15 @@ body {
     border-radius: 60px;
     animation: glowEffect 2s infinite alternate;
     text-align: center;
-    white-space: nowrap; /* Prevents text from wrapping */
-    z-index: 11;
+    white-space: nowrap;
+    z-index: 10; /* Ensures it stays on top */
 }
 
 /* 🔥 Hover Effect */
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
 }
 
@@ -209,16 +212,35 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    border: solid #3c3d3f; /* Matches button color */
+    width: 60px;
+    height: 60px;
+    border: solid #3c3d3f;
     border-width: 10px 10px 0 0;
     transform-origin: center;
     animation: arrowGlow 2s infinite alternate;
 }
 
 /* 🔹 Arrows Now Point **Directly** at the Button */
-.arrow-left { top: 50%; left: 25%; transform: translateY(-50%) rotate(0deg); }
-.arrow-right { top: 50%; right: 25%; transform: translateY(-50%) rotate(180deg); }
-.arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(90deg); }
-.arrow-bottom { bottom: 30%; left: 50%; transform: translateX(-50%) rotate(-90deg); }
+.arrow-left { 
+    top: 50%; 
+    left: 25%; 
+    transform: translateY(-50%) rotate(-45deg); /* Points Right → */
+}
+
+.arrow-right { 
+    top: 50%; 
+    right: 25%; 
+    transform: translateY(-50%) rotate(135deg); /* Points Left ← */
+}
+
+.arrow-top { 
+    top: 30%; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(225deg); /* Points Down ↓ */
+}
+
+.arrow-bottom { 
+    bottom: 30%; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg); /* Points Up ↑ */
+}
