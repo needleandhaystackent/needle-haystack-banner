@@ -220,21 +220,3 @@ body {
     border-width: 20px 35px 20px 0; /* Bigger Arrow */
     border-color: transparent #3c3d3f transparent transparent;
 }
-
-/* 🔹 Top Arrow - Points Down ↓ (Moved Closer & Made Bigger) */
-.arrow-top { 
-    top: 40%;  /* Moves it closer */
-    left: 50%; 
-    transform: translateX(-50%);
-    border-width: 0 20px 35px 20px; /* Bigger Arrow */
-    border-color: transparent transparent #3c3d3f transparent;
-}
-
-/* 🔹 Bottom Arrow - Points Up ↑ (Moved Closer & Made Bigger) */
-.arrow-bottom { 
-    bottom: 40%;  /* Moves it closer */
-    left: 50%; 
-    transform: translateX(-50%);
-    border-width: 35px 20px 0 20px; /* Bigger Arrow */
-    border-color: #3c3d3f transparent transparent transparent;
-}
