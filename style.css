@@ -200,8 +200,6 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 0;
-    height: 0;
     border-style: solid;
     animation: arrowGlow 2s infinite alternate;
 }
