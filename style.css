@@ -2,13 +2,18 @@
 
 /* 🔹 Make Entire Page & Header Fill Full Width & Height */
 html, body {
-    /* 🔹 Remove Google Sites Padding & White Borders */
-body, html {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-color: #363739;
+    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100vw;  /* Full Viewport Width */
+    height: 100vh; /* Full Viewport Height */
+    overflow-x: hidden; /* Prevent Side Scrolling */
 }
 
 /* 🔹 Ensure Full Width */
