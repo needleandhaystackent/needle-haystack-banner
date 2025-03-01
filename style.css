@@ -163,18 +163,6 @@ body {
     top: -30px;
 }
 
-/* 🔹 Cast Me Now Button (Perfect Center) */
-.cta-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto; /* Ensure no extra width is affecting centering */
-    z-index: 10; /* Make sure it appears on top */
-}
 
 .cta-button {
     position: absolute;
