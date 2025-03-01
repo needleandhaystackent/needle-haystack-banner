@@ -99,23 +99,6 @@ body {
     line-height: 1.1;
 }
 
-/* 🔹 Glowing "Needles" */
-@keyframes shine {
-    0% { background-position: 0%; filter: brightness(1); }
-    50% { background-position: 100%; filter: brightness(1.5); }
-    100% { background-position: 0%; filter: brightness(1); }
-}
-
-.slogan-subtext .shiny {
-    font-weight: bold;
-    font-size: 24px;
-    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 2s infinite alternate;
-}
-
 /* 🔹 Star Container */
 .star-container {
     display: flex;
@@ -152,7 +135,7 @@ body {
 
 /* 🔹 Star Text & Emojis */
 .star .emoji {
-    font-size: 60px; /* Made bigger */
+    font-size: 55px;
     margin-bottom: 5px;
 }
 
@@ -160,10 +143,10 @@ body {
     font-size: 20px;
     line-height: 1.2;
     position: relative;
-    top: -30px; /* Moves text up */
+    top: -30px;
 }
 
-/* 🔹 Cast Me Now Button (PERFECT CENTER) */
+/* 🔹 Cast Me Now Button (Perfect Center) */
 .cta-container {
     position: absolute;
     top: 50%;
@@ -215,24 +198,24 @@ body {
 /* 🔹 Arrows Now Point **Directly** at the Button */
 .arrow-left { 
     top: 50%; 
-    left: 28%; 
-    transform: translateY(-50%) rotate(0deg); /* Points right */
+    left: 25%; 
+    transform: translateY(-50%) rotate(0deg); /* Points right → */
 }
 
 .arrow-right { 
     top: 50%; 
-    right: 28%; 
-    transform: translateY(-50%) rotate(180deg); /* Points left */
+    right: 25%; 
+    transform: translateY(-50%) rotate(180deg); /* Points left ← */
 }
 
 .arrow-top { 
     top: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(90deg); /* Points downward */
+    transform: translateX(-50%) rotate(90deg); /* Points downward ↓ */
 }
 
 .arrow-bottom { 
     bottom: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(-90deg); /* Points upward */
+    transform: translateX(-50%) rotate(-90deg); /* Points upward ↑ */
 }
