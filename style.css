@@ -216,20 +216,20 @@ body > div:first-child {
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Left Arrow - Points Right → (Moved Down) */
+/* 🔹 Left Arrow - Points Right → (Bigger & Closer) */
 .arrow-left { 
-    top: 55%; /* Moved down from 50% to 55% */
-    left: 30%;  /* Moves it closer */
+    top: 57%; /* Slightly lower */
+    left: 35%;  /* Moves it closer */
     transform: translateY(-50%);
-    border-width: 20px 0 20px 35px; /* Bigger Arrow */
+    border-width: 25px 0 25px 45px; /* Bigger Arrow */
     border-color: transparent transparent transparent #3c3d3f;
 }
 
-/* 🔹 Right Arrow - Points Left ← (Moved Down) */
+/* 🔹 Right Arrow - Points Left ← (Bigger & Closer) */
 .arrow-right { 
-    top: 55%; /* Moved down from 50% to 55% */
-    right: 30%;  /* Moves it closer */
+    top: 57%; /* Slightly lower */
+    right: 35%;  /* Moves it closer */
     transform: translateY(-50%);
-    border-width: 20px 35px 20px 0; /* Bigger Arrow */
+    border-width: 25px 45px 25px 0; /* Bigger Arrow */
     border-color: transparent #3c3d3f transparent transparent;
 }
