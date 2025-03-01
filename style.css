@@ -198,6 +198,14 @@ body {
 }
 
 /* 🔹 Arrow Styling */
+/* 🔹 Glowing Arrows */
+@keyframes arrowGlow {
+    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
+}
+
+/* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
     width: 60px;
@@ -208,27 +216,27 @@ body {
     animation: arrowGlow 2s infinite alternate;
 }
 
-/* 🔹 Arrows Now Point **Directly** at the Button */
+/* 🔹 Corrected Arrow Directions */
 .arrow-left { 
     top: 50%; 
     left: 25%; 
-    transform: translateY(-50%) rotate(45%deg); /* Points Right → */
+    transform: translateY(-50%) rotate(0deg); /* Points Right → */
 }
 
 .arrow-right { 
     top: 50%; 
     right: 25%; 
-    transform: translateY(-50%) rotate(85deg); /* Points Left ← */
+    transform: translateY(-50%) rotate(180deg); /* Points Left ← */
 }
 
 .arrow-top { 
     top: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(225deg); /* Points Down ↓ */
+    transform: translateX(-50%) rotate(90deg); /* Points Down ↓ */
 }
 
 .arrow-bottom { 
     bottom: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(45deg); /* Points Up ↑ */
+    transform: translateX(-50%) rotate(-90deg); /* Points Up ↑ */
 }
