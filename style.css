@@ -16,26 +16,6 @@ html, body {
     overflow-x: hidden;
 }
 
-/* 🔹 Remove All Default Margins & Padding */
-* {
-    box-sizing: border-box;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* 🔹 Ensure Full-Width Content */
-.banner, .header, .content-container {
-    width: 100vw !important;
-    max-width: 100% !important;
-}
-
-/* 🔹 Fix Google Sites Section Padding */
-#sites-canvas-main, #sites-container, .sites-layout-name-one-column {
-    padding: 0 !important;
-    margin: 0 auto !important;
-    width: 100vw !important;
-    max-width: 100% !important;
-
 
 /* 🔹 Ensure Banner & Header Cover Full Screen */
 .banner {
