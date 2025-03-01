@@ -172,9 +172,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto; /* Ensure no extra width is affecting centering */
+    z-index: 10; /* Make sure it appears on top */
 }
 
 .cta-button {
+    .cta-button {
     background: #3c3d3f;
     color: white;
     font-size: clamp(20px, 3vw, 50px);
@@ -184,6 +187,8 @@ body {
     border-radius: 60px;
     animation: glowEffect 2s infinite alternate;
     text-align: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+    z-index: 11;
 }
 
 /* 🔥 Hover Effect */
