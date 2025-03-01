@@ -1,39 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
-
-/* 🔹 Make Entire Page & Header Fill Full Width & Height */
-html, body {
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    background-color: #363739;
-    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100vw;  /* Full Viewport Width */
-    height: 100vh; /* Full Viewport Height */
-    overflow-x: hidden; /* Prevent Side Scrolling */
-}
-
-/* 🔹 Ensure Full Width */
-.banner, .header, .content-container {
-    width: 100vw !important;
-    max-width: 100% !important;
-}
-
-/* 🔹 Fix Google Sites Section Padding */
-#sites-canvas-main, #sites-container, .sites-layout-name-one-column {
-    padding: 0 !important;
-    margin: 0 auto !important;
-    width: 100vw !important;
-    max-width: 100% !important;
-}
-
-/* 🔹 Remove Box Sizing Issues */
-* {
-    box-sizing: border-box;
-}
+overflow-x: hidden; /* Prevent Side Scrolling */
 }
 
 site-container {
@@ -47,218 +12,172 @@ site-container {
 
 /* 🔹 Ensure Banner & Header Cover Full Screen */
 .banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Full Width */
-    height: 100vh; /* Full Height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover; /* Ensures Background Fills */
-    background-position: center center;
-    background-attachment: fixed; /* Prevent Scrolling Gaps */
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw; /* Full Width */
+height: 100vh; /* Full Height */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-size: cover; /* Ensures Background Fills */
+background-position: center center;
+background-attachment: fixed; /* Prevent Scrolling Gaps */
 }
 
 /* 🔹 Remove Google Sites' Automatic Margins */
 body > div:first-child {
-    padding: 0 !important;
-    margin: 0 !important;
+padding: 0 !important;
+margin: 0 !important;
 }
 
 /* 🔹 Title */
 .title {
-    font-size: clamp(20px, 4vw, 50px);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    text-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.8),
-        -3px -3px 6px rgba(255, 255, 255, 0.6),
-        0px 0px 15px rgba(255, 215, 0, 0.7);
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    white-space: nowrap;
+font-size: clamp(20px, 4vw, 50px);
+font-weight: bold;
+text-transform: uppercase;
+color: black;
+text-shadow: 
+3px 3px 6px rgba(0, 0, 0, 0.8),
+-3px -3px 6px rgba(255, 255, 255, 0.6),
+0px 0px 15px rgba(255, 215, 0, 0.7);
+position: relative;
+margin-top: 20px;
+text-align: center;
+white-space: nowrap;
 }
 
 /* 🔹 Subtitle */
 .subtitle {
-    display: block;
-    font-size: clamp(20px, 4vw, 50px);
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-    text-shadow: 
-        3px 3px 6px rgba(0, 0, 0, 0.8),
-        -3px -3px 6px rgba(255, 255, 255, 0.6),
-        0px 0px 15px rgba(255, 215, 0, 0.7);
-    text-align: center;
-    margin-top: -30px;
+display: block;
+font-size: clamp(20px, 4vw, 50px);
+font-weight: bold;
+color: black;
+text-transform: uppercase;
+text-shadow: 
+3px 3px 6px rgba(0, 0, 0, 0.8),
+-3px -3px 6px rgba(255, 255, 255, 0.6),
+0px 0px 15px rgba(255, 215, 0, 0.7);
+text-align: center;
+margin-top: -30px;
 }
 
 /* 🔹 Glowing Animation */
 @keyframes glowEffect {
-    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
-    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
-    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
+100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
 }
 
 /* 🔹 Smaller Slogan */
 .slogan-container {
-    display: inline-block;
-    max-width: 40%;
-    text-align: center;
-    background: #3c3d3f;
-    padding: 3px 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translateX(-50%);
+display: inline-block;
+max-width: 40%;
+text-align: center;
+background: #3c3d3f;
+padding: 3px 10px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+position: absolute;
+top: 26%;
+left: 50%;
+transform: translateX(-50%);
 }
 
 /* 🔥 Ensure Box Fits Text */
 .slogan-container h2 {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+margin: 0;
+padding: 0;
+line-height: 1;
 }
 
 /* 🔹 Smaller Slogan Text */
 .slogan {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(14px, 2vw, 30px);
-    font-weight: bold;
-    background: linear-gradient(145deg, #ffcc00, #ffdd44);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    letter-spacing: 1px;
-    line-height: 1.1;
+font-family: 'Playfair Display', serif;
+font-size: clamp(14px, 2vw, 30px);
+font-weight: bold;
+background: linear-gradient(145deg, #ffcc00, #ffdd44);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+letter-spacing: 1px;
+line-height: 1.1;
 } /* <-- MISSING `}` WAS ADDED HERE */
 
 /* 🔹 Glowing "Needles" */
 @keyframes shine {
-    0% { background-position: 0%; filter: brightness(1); }
-    50% { background-position: 100%; filter: brightness(1.5); }
-    100% { background-position: 0%; filter: brightness(1); }
+0% { background-position: 0%; filter: brightness(1); }
+50% { background-position: 100%; filter: brightness(1.5); }
+100% { background-position: 0%; filter: brightness(1); }
 }
 
 .slogan-subtext .shiny {
-    font-weight: bold;
-    font-size: 28px;
-    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 2s infinite alternate;
+font-weight: bold;
+font-size: 28px;
+background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
+background-size: 300% 300%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 2s infinite alternate;
 }
 
 /* 🔹 Star Container */
 .star-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 90%;
-    max-width: 1200px;
-    margin-top: -40px;
-    position: relative;
+display: flex;
+justify-content: space-between;
+flex-wrap: nowrap;
+width: 90%;
+max-width: 1200px;
+margin-top: -40px;
+position: relative;
 }
 
 /* 🔹 Star Styling */
 .star {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 290px;
-    height: 290px;
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
-        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
-        2% 35%, 39% 35%);
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #37383a;
-    background: linear-gradient(145deg, #ffde59, #e6c200);
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
-    border: 3px solid rgba(255, 215, 0, 0.9);
-    animation: glowEffect 2s infinite alternate;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 290px;
+height: 290px;
+clip-path: polygon(
+50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+2% 35%, 39% 35%);
+font-family: 'Merriweather', serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+color: #37383a;
+background: linear-gradient(145deg, #ffde59, #e6c200);
+box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+border: 3px solid rgba(255, 215, 0, 0.9);
+animation: glowEffect 2s infinite alternate;
 }
 
 /* 🔹 Star Text & Emojis */
 .star .emoji {
-    font-size: 55px;
-    margin-bottom: 5px;
+font-size: 55px;
+margin-bottom: 5px;
 }
 
 .star .star-text {
-    font-size: 18px;
-    line-height: 1.2;
-    position: relative;
-    top: -30px;
+font-size: 18px;
+line-height: 1.2;
+position: relative;
+top: -30px;
 }
 
 /* 🔹 Cast Me Now Button - Moved Down */
 .cta-button {
-    position: absolute;
-    top: 55%; /* Moved down from 50% to 55% */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #3c3d3f;
-    color: white;
-    font-size: clamp(20px, 3vw, 50px);
-    font-weight: bold;
-    padding: 15px 35px;
-    text-decoration: none;
-    border-radius: 60px;
-    animation: glowEffect 2s infinite alternate;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 10; /* Ensures it stays on top */
-}
-
-/* 🔥 Hover Effect */
-.cta-button:hover {
-    background: gold;
-    color: black;
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0px 0px 30px rgba(255, 223, 0, 0.9);
-}
-
-/* 🔹 Glowing Arrows */
-@keyframes arrowGlow {
-    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-}
-
-/* 🔹 Arrow Styling */
-.arrow {
-    position: absolute;
-    border-style: solid;
-    animation: arrowGlow 2s infinite alternate;
-}
-
-/* 🔹 Left Arrow - Points Right → (Bigger & Closer) */
-.arrow-left { 
-    top: 55%; /* Slightly lower */
-    left: 33%;  /* Moves it closer */
-    transform: translateY(-50%);
-    border-width: 25px 0 25px 45px; /* Bigger Arrow */
-    border-color: transparent transparent transparent #3c3d3f;
-}
-
-/* 🔹 Right Arrow - Points Left ← (Bigger & Closer) */
-.arrow-right { 
-    top: 55%; /* Slightly lower */
-    right: 33%;  /* Moves it closer */
-    transform: translateY(-50%);
-    border-width: 25px 45px 25px 0; /* Bigger Arrow */
-    border-color: transparent #3c3d3f transparent transparent;
-}
+position: absolute;
+top: 55%; /* Moved down from 50% to 55% */
+left: 50%;
+transform: translate(-50%, -50%);
+background: #3c3d3f;
+color: white;
+font-size: clamp(20px, 3vw, 50px);
+font-weight: bold;
+padding: 15px 35px;
+text-decoration: none;
