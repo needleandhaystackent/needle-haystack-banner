@@ -97,7 +97,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
     line-height: 1.1;
-
+} /* <-- MISSING `}` WAS ADDED HERE */
 
 /* 🔹 Glowing "Needles" */
 @keyframes shine {
@@ -115,7 +115,6 @@ body {
     -webkit-text-fill-color: transparent;
     animation: shine 2s infinite alternate;
 }
-
 
 /* 🔹 Star Container */
 .star-container {
@@ -214,26 +213,7 @@ body {
 }
 
 /* 🔹 Arrows Now Point **Directly** at the Button */
-.arrow-left { 
-    top: 50%; 
-    left: 25%; 
-    transform: translateY(-50%) rotate(0deg); /* Points right → */
-}
-
-.arrow-right { 
-    top: 50%; 
-    right: 25%; 
-    transform: translateY(-50%) rotate(180deg); /* Points left ← */
-}
-
-.arrow-top { 
-    top: 30%; 
-    left: 50%; 
-    transform: translateX(-50%) rotate(90deg); /* Points downward ↓ */
-}
-
-.arrow-bottom { 
-    bottom: 30%; 
-    left: 50%; 
-    transform: translateX(-50%) rotate(-90deg); /* Points upward ↑ */
-}
+.arrow-left { top: 50%; left: 25%; transform: translateY(-50%) rotate(0deg); }
+.arrow-right { top: 50%; right: 25%; transform: translateY(-50%) rotate(180deg); }
+.arrow-top { top: 30%; left: 50%; transform: translateX(-50%) rotate(90deg); }
+.arrow-bottom { bottom: 30%; left: 50%; transform: translateX(-50%) rotate(-90deg); }
