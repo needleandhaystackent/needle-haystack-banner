@@ -1,13 +1,40 @@
-overflow-x: hidden; /* Prevent Side Scrolling */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* 🔹 Remove Google Sites Padding & White Borders */
+html, body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-color: #363739;
+    background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
 }
 
-site-container {
-    width: 100%;
-    max-width: 100%;
-  }
-  .header {
+/* 🔹 Remove All Default Margins & Padding */
+* {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 🔹 Ensure Full-Width Content */
+.banner, .header, .content-container {
     width: 100vw !important;
-  }
+    max-width: 100% !important;
+}
+
+/* 🔹 Fix Google Sites Section Padding */
+#sites-canvas-main, #sites-container, .sites-layout-name-one-column {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100vw !important;
+    max-width: 100% !important;
 
 
 /* 🔹 Ensure Banner & Header Cover Full Screen */
