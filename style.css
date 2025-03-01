@@ -150,20 +150,20 @@ body {
     animation: glowEffect 2s infinite alternate;
 }
 
-/* 🔹 Adjust Text & Emojis in Stars */
+/* 🔹 Star Text & Emojis */
 .star .emoji {
-    font-size: 60px;
+    font-size: 60px; /* Made bigger */
     margin-bottom: 5px;
 }
 
 .star .star-text {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2;
     position: relative;
-    top: -30x;
+    top: -30px; /* Moves text up */
 }
 
-/* 🔹 Cast Me Now Button (Perfect Center) */
+/* 🔹 Cast Me Now Button (PERFECT CENTER) */
 .cta-container {
     position: absolute;
     top: 50%;
@@ -172,7 +172,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .cta-button {
@@ -205,8 +204,8 @@ body {
 /* 🔹 Arrow Styling */
 .arrow {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border: solid #3c3d3f; /* Matches button color */
     border-width: 10px 10px 0 0;
     transform-origin: center;
@@ -216,13 +215,13 @@ body {
 /* 🔹 Arrows Now Point **Directly** at the Button */
 .arrow-left { 
     top: 50%; 
-    left: 25%; 
+    left: 28%; 
     transform: translateY(-50%) rotate(0deg); /* Points right */
 }
 
 .arrow-right { 
     top: 50%; 
-    right: 25%; 
+    right: 28%; 
     transform: translateY(-50%) rotate(180deg); /* Points left */
 }
 
@@ -236,3 +235,4 @@ body {
     bottom: 30%; 
     left: 50%; 
     transform: translateX(-50%) rotate(-90deg); /* Points upward */
+}
