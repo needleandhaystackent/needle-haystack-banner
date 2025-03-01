@@ -197,22 +197,12 @@ body {
     100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
 }
 
-/* 🔹 Arrow Styling */
-/* 🔹 Glowing Arrows */
-@keyframes arrowGlow {
-    0% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-    50% { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)); }
-}
-
-/* 🔹 Arrow Styling */
+/* 🔹 Corrected Arrow Styling */
 .arrow {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    border: solid #3c3d3f;
-    border-width: 10px 10px 0 0;
-    transform-origin: center;
+    width: 0;
+    height: 0;
+    border-style: solid;
     animation: arrowGlow 2s infinite alternate;
 }
 
@@ -220,23 +210,31 @@ body {
 .arrow-left { 
     top: 50%; 
     left: 25%; 
-    transform: translateY(-50%) rotate(0deg); /* Points Right → */
+    transform: translateY(-50%);
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #3c3d3f; /* Points Right → */
 }
 
 .arrow-right { 
     top: 50%; 
     right: 25%; 
-    transform: translateY(-50%) rotate(180deg); /* Points Left ← */
+    transform: translateY(-50%);
+    border-width: 15px 25px 15px 0;
+    border-color: transparent #3c3d3f transparent transparent; /* Points Left ← */
 }
 
 .arrow-top { 
     top: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(90deg); /* Points Down ↓ */
+    transform: translateX(-50%);
+    border-width: 0 15px 25px 15px;
+    border-color: transparent transparent #3c3d3f transparent; /* Points Down ↓ */
 }
 
 .arrow-bottom { 
     bottom: 30%; 
     left: 50%; 
-    transform: translateX(-50%) rotate(-90deg); /* Points Up ↑ */
+    transform: translateX(-50%);
+    border-width: 25px 15px 0 15px;
+    border-color: #3c3d3f transparent transparent transparent; /* Points Up ↑ */
 }
