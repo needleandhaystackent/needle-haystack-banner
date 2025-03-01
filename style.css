@@ -97,7 +97,25 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
     line-height: 1.1;
+
+
+/* 🔹 Glowing "Needles" */
+@keyframes shine {
+    0% { background-position: 0%; filter: brightness(1); }
+    50% { background-position: 100%; filter: brightness(1.5); }
+    100% { background-position: 0%; filter: brightness(1); }
 }
+
+.slogan-subtext .shiny {
+    font-weight: bold;
+    font-size: 28px;
+    background: linear-gradient(120deg, #ffffff, #e6e6e6, #cfcfcf, #ffffff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite alternate;
+}
+
 
 /* 🔹 Star Container */
 .star-container {
