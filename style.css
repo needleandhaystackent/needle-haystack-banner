@@ -178,14 +178,28 @@ top: -30px;
 
 /* 🔹 Cast Me Now Button - Moved Down */
 .cta-button {
-position: absolute;
-top: 55%; /* Moved down from 50% to 55% */
-left: 50%;
-transform: translate(-50%, -50%);
-background: #3c3d3f;
-color: white;
-font-size: clamp(20px, 3vw, 50px);
-font-weight: bold;
-padding: 15px 35px;
-text-decoration: none;
+    position: absolute;
+    top: 55%; /* Adjust for placement */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3c3d3f;
+    color: white;
+    font-size: clamp(20px, 3vw, 50px);
+    font-weight: bold;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 60px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 999;
+    animation: glowEffect 2s infinite alternate !important; /* Make sure animation applies */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect - Keeps Glow Stronger */
+.cta-button:hover {
+    background: gold;
+    color: black;
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0px 0px 40px rgba(255, 223, 0, 1), 0px 0px 70px rgba(255, 215, 0, 0.9);
 }
