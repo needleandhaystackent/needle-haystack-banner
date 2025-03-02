@@ -12,7 +12,7 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -22,8 +22,8 @@ html, body {
 position: absolute;
 top: 0;
 left: 0;
-width: 100vw; /* Full Width */
-height: 100vh; /* Full Height */
+width: 100%; /* Full Width */
+height: 100%; /* Full Height */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -110,7 +110,7 @@ background: linear-gradient(145deg, #ffcc00, #ffdd44);
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 letter-spacing: 1px;
 line-height: 1.1;
-} /* <-- MISSING `}` WAS ADDED HERE */
+}
 
 /* 🔹 Glowing "Needles" */
 @keyframes shine {
@@ -188,3 +188,4 @@ font-size: clamp(20px, 3vw, 50px);
 font-weight: bold;
 padding: 15px 35px;
 text-decoration: none;
+}
