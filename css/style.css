@@ -184,9 +184,6 @@ top: -30px;
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: scale(1.1);
+    transform: translateX(-50%) scale(1.1); /* ✅ Keeps it from shifting */
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 1);
-    color: black;
-    transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0px 0px 40px rgba(255, 223, 0, 1), 0px 0px 70px rgba(255, 215, 0, 0.9);
 }
