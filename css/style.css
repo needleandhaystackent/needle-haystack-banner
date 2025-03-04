@@ -18,9 +18,7 @@ html, body {
 
 /* 🔹 Banner Covers Full Screen */
 .banner {
-    top: 0;
-    left: 0;
-    padding-top: 100px; /* Adjust as needed to prevent title from being hidden */
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -28,8 +26,7 @@ html, body {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-position: center bottom;
-    background-attachment: fixed;
+    background-position: center bottom; /* Moves the image further down */
 }
 
 /* 🔹 Adjusting Image for Mobile */
