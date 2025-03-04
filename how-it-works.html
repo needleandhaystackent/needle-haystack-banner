@@ -1,4 +1,14 @@
-<!-- 🔹 Load Header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Needle and Haystack Entertainment</title>
+    <link rel="stylesheet" href="css/how-it-works.css">
+</head>
+<body>
+
+    <!-- 🔹 Load Header -->
     <div id="header-placeholder"></div>
     <script>
         fetch("header.html")
@@ -8,56 +18,58 @@
 
     <div class="container">
         <h1>How It Works</h1>
-        <p>Whether you're looking to <strong>get cast</strong> or <strong>hire talent</strong>, our simple step-by-step process makes it easy!</p>
+        <p>At <strong>Needle and Haystack Entertainment</strong>, we make the casting process seamless for both **talent** and **producers**. Follow the simple steps below!</p>
 
-        <div class="steps-container">
-            <!-- Left Side: For Talent -->
+        <div class="steps-grid">
+            <!-- Steps for Talent -->
             <div class="steps-column">
-                <h2>🎭 Want to Get Cast?</h2>
-                <div class="step">
-                    <h3>Step 1️⃣: Create Your Profile</h3>
-                    <p>Fill out our quick form with your **headshot, resume, and skills.**</p>
+                <h2>🎭 For Talent</h2>
+                <div class="step-box">
+                    <h3>Step 1: Submit Your Profile</h3>
+                    <p>Fill out our casting form with your details, photos, and experience.</p>
                 </div>
-                <div class="arrow">⬇️</div>
-                <div class="step">
-                    <h3>Step 2️⃣: Get Added to Our Database</h3>
-                    <p>Our casting team reviews and adds you to our **exclusive talent list.**</p>
+                <div class="step-box">
+                    <h3>Step 2: Get Matched</h3>
+                    <p>Our team reviews your profile and matches you to open casting calls.</p>
                 </div>
-                <div class="arrow">⬇️</div>
-                <div class="step">
-                    <h3>Step 3️⃣: Get Notified & Audition</h3>
-                    <p>Receive casting calls for **TV, film, commercials, and reality shows!**</p>
+                <div class="step-box">
+                    <h3>Step 3: Get Notified</h3>
+                    <p>When a project fits you, we reach out and set up the next steps.</p>
                 </div>
-                <div class="cta-button">
-                    <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form">Submit Your Profile Here</a>
+                <div class="button-container">
+                    <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button">Submit Your Profile</a>
                 </div>
             </div>
 
-            <!-- Right Side: For Hiring Talent -->
+            <!-- Steps for Producers -->
             <div class="steps-column">
-                <h2>🎬 Need to Hire Talent?</h2>
-                <div class="step">
-                    <h3>Step 1️⃣: Tell Us What You Need</h3>
-                    <p>Email us with details about your **project, budget, and casting needs.**</p>
+                <h2>🎬 For Producers</h2>
+                <div class="step-box">
+                    <h3>Step 1: Contact Us</h3>
+                    <p>Tell us what you need—actors, reality stars, or game show contestants.</p>
                 </div>
-                <div class="arrow">⬇️</div>
-                <div class="step">
-                    <h3>Step 2️⃣: We Find Your Talent</h3>
-                    <p>We search our database and send you a curated list of **top candidates.**</p>
+                <div class="step-box">
+                    <h3>Step 2: Receive Talent Options</h3>
+                    <p>We curate the best talent that fits your project’s vision.</p>
                 </div>
-                <div class="arrow">⬇️</div>
-                <div class="step">
-                    <h3>Step 3️⃣: Cast & Start Filming!</h3>
-                    <p>Choose your perfect match, book them, and start your **production!**</p>
+                <div class="step-box">
+                    <h3>Step 3: Cast Your Project</h3>
+                    <p>Choose from our talent pool and finalize casting quickly and efficiently.</p>
                 </div>
-                <div class="cta-button">
-                    <a href="mailto:info@needleandhaystackent.com">Email Us for Casting</a>
+                <div class="button-container">
+                    <a href="mailto:info@needleandhaystackent.com" class="email-link">Contact Us</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- 🔹 Load Footer -->
-    <script src="js/footer.js"></script>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+
 </body>
 </html>
