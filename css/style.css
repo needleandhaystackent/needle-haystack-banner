@@ -167,7 +167,10 @@ top: -30px;
 
 .cta-button {
     display: block;
-    margin: 50px auto 20px; /* ✅ Keeps it centered */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* ✅ Centers the button */
+    margin: 50px auto 20px;
     background: #3c3d3f;
     color: white;
     font-size: clamp(20px, 3vw, 50px);
@@ -180,10 +183,9 @@ top: -30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🔥 Hover Effect - Keeps Glow Stronger */
 .cta-button:hover {
     background: gold;
     color: black;
-    transform: translateX(-50%) scale(1.1); /* ✅ Keeps it from shifting */
+    transform: translateX(-50%) scale(1.1); /* ✅ Keeps it centered */
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 1);
 }
