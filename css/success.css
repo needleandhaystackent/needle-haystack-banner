@@ -1,1 +1,74 @@
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #363739;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* 🔹 Reviews Grid */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* 🔹 Review Box Styling */
+.review-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔥 Hover Effect */
+.review-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 223, 0, 1);
+}
+
+/* 🔹 Star Ratings */
+.review-box h3 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Reviewer Name */
+.review-box h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffdd44;
+    margin-top: 15px;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
