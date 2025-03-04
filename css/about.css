@@ -94,7 +94,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensures both boxes are the same height */
+    height: auto; /* Ensures both boxes are the same height */
 }
 
 /* 🔹 Headings */
@@ -104,6 +104,15 @@ h2 {
     text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
     text-align: center;
 }
+
+/* 🔹 Force Both Columns to Match Tallest One */
+.columns::after {
+    content: "";
+    display: block;
+    flex-grow: 1; /* Makes sure both columns match */
+}
+
+
 
 /* 🔹 Align Buttons to Bottom */
 .button-container {
