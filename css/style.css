@@ -12,7 +12,24 @@ html, body {
     overflow-x: hidden;
 }
 
-/* 🔹 Banner Covers Full Screen */
+
+/* 🔹 Header Styling */
+.header {
+    position: fixed; /* Stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Adjust height as needed */
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+
+/* 🔹 Banner Adjustments */
 .banner {
     position: relative;
     width: 100vw;
@@ -28,12 +45,15 @@ html, body {
     background-position: center bottom; /* Moves the image down */
     background-repeat: no-repeat;
     
+    /* ✅ Push the content down below the header */
+    padding-top: 100px; /* Adjust to match your header height */
 }
 
 /* 🔹 Adjusting Image for Mobile */
 @media (max-width: 1200px) {
     .banner {
         background-position: center 95%; /* Ensures needle is visible */
+        padding-top: 120px; /* Extra space for mobile header */
     }
 }
 
@@ -55,14 +75,15 @@ html, body {
     text-transform: uppercase;
     color: black;
     text-shadow: 
-    3px 3px 6px rgba(0, 0, 0, 0.8),
-    -3px -3px 6px rgba(255, 255, 255, 0.6),
-    0px 0px 15px rgba(255, 215, 0, 0.7);
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        -3px -3px 6px rgba(255, 255, 255, 0.6),
+        0px 0px 15px rgba(255, 215, 0, 0.7);
     position: relative;
     margin-top: 20px;
     text-align: center;
     white-space: nowrap;
     z-index: 2;
+    margin-top: 10px; /* ✅ Adjust spacing */
 }
 
 /* 🔹 Subtitle */
@@ -74,12 +95,13 @@ html, body {
     color: black;
     text-transform: uppercase;
     text-shadow: 
-    3px 3px 6px rgba(0, 0, 0, 0.8),
-    -3px -3px 6px rgba(255, 255, 255, 0.6),
-    0px 0px 15px rgba(255, 215, 0, 0.7);
+        3px 3px 6px rgba(0, 0, 0, 0.8),
+        -3px -3px 6px rgba(255, 255, 255, 0.6),
+        0px 0px 15px rgba(255, 215, 0, 0.7);
     text-align: center;
     margin-top: -30px;
     z-index: 2;
+    margin-top: -10px; /* ✅ Adjust spacing */
 }
 
 /* 🔹 Glowing Animation */
