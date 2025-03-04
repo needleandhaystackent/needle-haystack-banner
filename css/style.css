@@ -63,7 +63,7 @@ html, body {
     /* ✅ Only Set Background Here */
     background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
     background-size: cover;
-    background-position: center bottom; /* Moves the image down */
+    background-position: center; /* Moves the image down */
     background-repeat: no-repeat;
     
     /* ✅ Push the content down below the header */
