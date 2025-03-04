@@ -5,69 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Needle and Haystack Entertainment</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">  <!-- Connects the About Us styling -->
+    <link rel="stylesheet" href="about.css">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            background-color: #363739;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .column {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            text-align: left;
+            min-width: 300px;
+        }
+
+        h2 {
+            color: #ffdd44;
+            text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #ffcc00;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: gold;
+            box-shadow: 0px 0px 15px rgba(255, 223, 0, 1);
+        }
+
+        .email-link {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            margin-top: 15px;
+            color: #ffdd44;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- 🔹 Header (Keeps Navigation Consistent Across Pages) -->
-    <header class="site-header">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <div class="container">
-        <h1 class="glow-title">The Smarter Way to Cast & Get Cast</h1>
-        <p class="intro-text">
-            At <span class="highlight">Needle and Haystack Entertainment</span>, we connect 
-            <strong>producers, filmmakers, and brands</strong> with <strong>top-tier talent</strong>—without the Hollywood price tag.
-        </p>
+        <h1>About Needle and Haystack Entertainment</h1>
+        <p>At **Needle and Haystack Entertainment**, we connect **producers, filmmakers, and brands** with top-tier talent—without the **Hollywood price tag.** Whether you're an **aspiring star** or a **production team looking for the perfect fit**, we’re here to make casting **simple, affordable, and efficient.**</p>
 
-        <div class="glow-box">
-            <p>Looking for actors, reality stars, or commercial talent? <span class="highlight">Or ARE YOU the talent hoping to land your big break?</span> 
-            This is the place for you.</p>
-        </div>
-
-        <h2 class="section-title">🎬 Looking to Hire Talent?</h2>
-        <div class="services">
-            <div class="service-box">
-                <h3>💰 Competitive Pricing</h3>
-                <p>The **budget-friendly** alternative to big casting offices.</p>
+        <div class="columns">
+            <!-- Left Side: Looking to Get Cast -->
+            <div class="column">
+                <h2>🎭 Looking to Get Cast?</h2>
+                <p>Want to be on **TV, film, reality shows, or commercials**? We work with **up-and-coming talent**, helping them get discovered by casting professionals.</p>
+                <p>✔️ Build your **acting or on-screen profile.**</p>
+                <p>✔️ Get considered for **game shows, reality TV, commercials, and more!**</p>
+                <p>✔️ Be part of an **exclusive database** viewed by industry professionals.</p>
+                <a href="YOUR_SIGNUP_FORM_LINK_HERE" class="cta-button">Submit Your Profile</a>
             </div>
-            <div class="service-box">
-                <h3>⚡ Fast & Strategic</h3>
-                <p>Need talent **now**? We streamline the process.</p>
-            </div>
-            <div class="service-box">
-                <h3>📊 Quality & Experience</h3>
-                <p>We work with **thousands of actors & TV personalities**.</p>
-            </div>
-            <div class="service-box">
-                <h3>✅ No Hidden Fees</h3>
-                <p>**Upfront pricing**—no surprises.</p>
-            </div>
-        </div>
 
-        <h2 class="section-title">🎭 Looking to Get Cast?</h2>
-        <p class="cta-text">**Want to be on TV? In a movie? A reality show?**</p>
-        <div class="glow-box">
-            <p>📩 <span class="highlight">Join our database and get discovered.</span> **It’s FREE.**</p>
-        </div>
-
-        <h2 class="section-title">Why Choose Needle and Haystack Entertainment?</h2>
-        <p class="cta-text">✔ <strong>Affordable</strong> – We work with ANY budget.</p>
-        <p class="cta-text">✔ <strong>Industry Experts</strong> – **Years of experience** in major productions.</p>
-        <p class="cta-text">✔ <strong>We Connect People</strong> – **Projects & talent**—brought together.</p>
-
-        <div class="cta-button-container">
-            <a href="apply.html" class="cta-button">Join Our Database</a>
-            <a href="contact.html" class="cta-button">Hire Us</a>
+            <!-- Right Side: Looking to Hire Talent -->
+            <div class="column">
+                <h2>🎬 Looking to Hire Talent?</h2>
+                <p>We help **independent filmmakers, producers, and brands** find the right talent—**without breaking the bank.**</p>
+                <p>✔️ Affordable casting for **student films, indie projects, and commercials.**</p>
+                <p>✔️ Access a **curated database** of fresh talent.</p>
+                <p>✔️ No hefty casting agency fees—**get quality talent at competitive rates!**</p>
+                <a href="mailto:yourcastingemail@yourdomain.com" class="email-link">Email Us for Casting</a>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
