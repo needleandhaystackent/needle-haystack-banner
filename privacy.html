@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Needle and Haystack Entertainment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <!-- 🔹 Load Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+    </script>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>This Privacy Policy explains how we collect, use, and protect your data when using our website.</p>
+        
+        <h2>What Information Do We Collect?</h2>
+        <p>When you sign up for casting opportunities, we collect your name, email, and profile details.</p>
+
+        <h2>How Do We Use Your Data?</h2>
+        <p>We use your information to match talent with casting opportunities. We never sell your data.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about our privacy practices, email us at <a href="mailto:info@needleandhaystackent.com">info@needleandhaystackent.com</a>.</p>
+    </div>
+
+    <!-- 🔹 Load Footer -->
+    <script src="js/footer.js"></script>
+
+</body>
+</html>
