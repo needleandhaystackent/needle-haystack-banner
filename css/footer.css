@@ -1,24 +1,30 @@
-footer {
-    background: #222;
-    color: white;
+/* 🔹 Footer Styling */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    width: 100%;
+    margin-top: 40px;
 }
 
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
+/* 🔹 Footer Links */
+.footer a {
+    font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
+    color: #ffcc00 !important; /* ✅ Ensures Gold Links */
+    transition: 0.3s ease-in-out;
 }
 
-footer a:hover {
-    color: gold;
+/* 🔹 Fix for Purple Links */
+.footer a:visited,
+.footer a:active,
+.footer a:link {
+    color: #ffcc00 !important; /* ✅ Forces All Links to Stay Gold */
 }
 
-.tagline {
-    font-style: italic;
-    color: #ffcc00;
-    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8);
-    font-size: 1.2rem;
+/* 🔥 Hover Effect */
+.footer a:hover {
+    color: gold !important;
+    text-shadow: 0px 0px 10px rgba(255, 223, 0, 1);
 }
