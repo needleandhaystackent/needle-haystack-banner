@@ -1,1 +1,40 @@
+/* 🔹 Header Styling */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
 
+/* 🔹 Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Ensures spacing between links */
+}
+
+/* 🔹 Navigation Links */
+.navbar a {
+    font-size: 20px; /* ✅ Makes text larger */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffcc00; /* ✅ Gold color */
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+/* 🔥 Hover Effect */
+.navbar a:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(255, 223, 0, 1);
+}
+
+/* 🔹 Fix for Purple Links (Remove Default Styling) */
+.navbar a:visited {
+    color: #ffcc00; /* ✅ Ensures links don’t turn purple */
+}
