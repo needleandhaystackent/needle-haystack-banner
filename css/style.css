@@ -167,7 +167,7 @@ top: -30px;
 
 .cta-button {
     position: absolute;
-    top: 65%; /* Adjust this value to fine-tune vertical centering */
+    top: 60%; /* Adjust this value to fine-tune vertical centering */
     left: 50%;
     transform: translate(-50%, -50%); /* ✅ Ensures perfect centering */
     background: #3c3d3f;
