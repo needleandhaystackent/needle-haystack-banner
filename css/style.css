@@ -7,7 +7,7 @@ html, body {
     background-color: #363739;
     background-image: url('https://github.com/needleandhaystackent/needle-haystack-banner/blob/main/image2.png?raw=true');
     background-size: cover;
-    background-position: center bottom !important;
+    background-position: center 100vh !important;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -26,15 +26,24 @@ html, body {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-position: center bottom !important; /* Moves the image further down */
+    background-position: center 905 !important; /* Moves the image further down */
 }
 
 /* 🔹 Adjusting Image for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .banner {
         background-position: center 120% !important; /* Ensures needle is visible */
     }
 }
+
+
+/* 🔹 Fix for Mobile */
+@media (max-width: 768px) {
+    .banner {
+        background-position: center 150% !important; /* Extra push down for mobile */
+    }
+}
+
 
 
 
