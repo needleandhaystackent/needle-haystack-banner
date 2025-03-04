@@ -1,4 +1,4 @@
-@import url('footer.css');
+@import url('css/footer.css');
 
 /* 🔹 Header Styling */
 .header {
@@ -20,7 +20,7 @@
 }
 
 .navbar a {
-    color: #ffcc00;
+    color: #ffcc00 !Important! ;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
