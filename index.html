@@ -6,16 +6,25 @@
     <title>Needle and Haystack</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 🔹 Load Header Before Content -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html") // Adjust path if necessary
+                .then(response => response.text())
+                .then(data => document.getElementById("header-placeholder").innerHTML = data);
+        });
+    </script>
 </head>
 <body>
-    <div id="header-container"></div>
-    
+    <!-- 🔹 Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
     <div class="banner">
         <!-- Main Title -->
         <h1 class="title">Needle and Haystack</h1>
         <span class="subtitle">Entertainment</span>
 
-        
         <!-- Slogan -->
         <div class="slogan-container">
             <h2 class="slogan">
@@ -57,15 +66,6 @@
 
         <!-- Call to Action Button (Moved to the Bottom) -->
         <a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" class="cta-button" target="_blank" rel="noopener noreferrer">Cast Me Now!</a>
-
     </div> <!-- Closes Banner -->
-    
-    <!-- 🔹 Load Header from header.html -->
-<div id="header-placeholder"></div>
-<script>
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header-placeholder").innerHTML = data);
-</script>
 </body>
 </html>
