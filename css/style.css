@@ -44,9 +44,7 @@ html, body {
 .nav-links {
     display: flex;
     justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
+    gap: 20px;
 }
 
 
