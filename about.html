@@ -40,5 +40,15 @@
 
         <h3>📩 <span class="highlight">For producers & industry professionals:</span> Contact us to gain access to our growing talent database.</h3>
     </div>
+
+    <div id="header-container"></div>
+
+    <script>
+    fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+    });
+    </script>
 </body>
 </html>
