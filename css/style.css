@@ -71,15 +71,14 @@ margin-top: -30px;
 }
 
 .slogan-container {
-    display: block;
+    display: inline-block;
+    max-width: 40%;
     text-align: center;
-    margin: 20px auto; /* ✅ Allows it to scroll */
-    padding: 10px;
-    background: rgba(255, 215, 0, 0.2);
+    background: #3c3d3f;
+    padding: 3px 10px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    width: 80%; /* Adjust width to fit the page */
-    max-width: 600px; /* Ensures it doesn’t stretch too much */
+    margin-top: 20px; /* ✅ Adjust spacing */
 }
 
 /* 🔥 Ensure Box Fits Text */
@@ -168,21 +167,25 @@ top: -30px;
 
 .cta-button {
     display: block;
-    margin: 30px auto; /* ✅ Ensures it scrolls with the page */
-    background: #ffcc00;
-    color: black;
-    font-size: clamp(20px, 3vw, 30px);
+    margin: 50px auto 20px; /* ✅ Keeps it centered */
+    background: #3c3d3f;
+    color: white;
+    font-size: clamp(20px, 3vw, 50px);
     font-weight: bold;
     padding: 15px 35px;
     text-decoration: none;
     border-radius: 60px;
     text-align: center;
+    white-space: nowrap;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* 🔥 Hover Effect - Keeps Glow Stronger */
 .cta-button:hover {
     background: gold;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(255, 223, 0, 1);
     color: black;
     transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0px 0px 40px rgba(255, 223, 0, 1), 0px 0px 70px rgba(255, 215, 0, 0.9);
