@@ -94,6 +94,12 @@
         </div>
     </div>
     <script src="js/footer.js"></script>
+        fetch("js/footer.js")
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML("beforeend", data))
+            .catch(error => console.log("Footer load error: ", error));
+    </script>
+
 </body>
 </html>
 
