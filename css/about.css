@@ -105,14 +105,6 @@ h2 {
     text-align: center;
 }
 
-/* 🔹 Force Both Columns to Match Tallest One */
-.columns::after {
-    content: "";
-    display: block;
-    flex-grow: 1; /* Makes sure both columns match */
-}
-
-
 
 /* 🔹 Align Buttons to Bottom */
 .button-container {
