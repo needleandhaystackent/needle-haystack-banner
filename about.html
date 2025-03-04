@@ -64,10 +64,11 @@
             gap: 30px;
         }
 
+        /* 🔹 Equal Column Heights */
         .columns {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: stretch; /* Makes both columns same height */
             gap: 40px;
             flex-wrap: wrap;
             margin-top: 30px;
@@ -83,7 +84,7 @@
             min-width: 300px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: space-between; /* Ensures buttons are aligned */
         }
 
         h2 {
@@ -107,8 +108,8 @@
             border-radius: 8px;
             transition: all 0.3s ease-in-out;
             display: inline-block;
-            margin-top: 15px;
             box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+            align-self: center; /* Ensures the button stays centered */
         }
 
         /* 🔥 Hover Effect for BOTH Buttons */
@@ -123,7 +124,7 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            margin-top: 15px;
+            margin-top: auto; /* Ensures buttons are at the bottom */
         }
 
     </style>
