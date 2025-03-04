@@ -30,6 +30,15 @@
 
         <p><strong>Last Updated:</strong> March 2025</p>
     </div>
+<!-- 🔹 Load Footer -->
+<div id="footer-placeholder"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data)
+        .catch(error => console.log("Footer load error: ", error));
+</script>
 
+    
 </body>
 </html>
