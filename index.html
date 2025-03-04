@@ -60,12 +60,12 @@
 
     </div> <!-- Closes Banner -->
     
-    <script>
-        fetch('header.html')
+    <!-- 🔹 Load Header from header.html -->
+<div id="header-placeholder"></div>
+<script>
+    fetch("header.html")
         .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-container').innerHTML = data;
-        });
-    </script>
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+</script>
 </body>
 </html>
