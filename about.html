@@ -30,6 +30,40 @@
             margin-bottom: 20px;
         }
 
+        /* 🔹 Header Styling */
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .header a {
+            color: #ffcc00;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .header a:hover {
+            color: gold;
+            text-shadow: 0px 0px 10px rgba(255, 223, 0, 1);
+        }
+
+        /* 🔹 Header Links */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
         .columns {
             display: flex;
             justify-content: space-between;
@@ -49,7 +83,7 @@
             min-width: 300px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Ensures everything inside is centered */
+            align-items: center;
         }
 
         h2 {
@@ -95,6 +129,16 @@
     </style>
 </head>
 <body>
+
+    <!-- 🔹 Global Header (Added to Every Page) -->
+    <div class="header">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
     <div class="container">
         <h1>About Needle and Haystack Entertainment</h1>
         <p>At <strong>Needle and Haystack Entertainment</strong>, we connect <strong>producers, filmmakers, and brands</strong> with top-tier talent—without the <strong>Hollywood price tag.</strong> Whether you're an <strong>aspiring star</strong> or a <strong>production team looking for the perfect fit</strong>, we’re here to make casting <strong>simple, affordable, and efficient.</strong></p>
