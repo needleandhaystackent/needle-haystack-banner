@@ -1,1 +1,24 @@
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
 
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: gold;
+}
+
+.tagline {
+    font-style: italic;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8);
+    font-size: 1.2rem;
+}
