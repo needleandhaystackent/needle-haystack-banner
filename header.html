@@ -1,50 +1,33 @@
-<div class="header">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://airtable.com/appc1xX0b0y1AaM0Q/pagko77UWMxqxBvlZ/form" target="_blank" rel="noopener noreferrer">Cast Me Now!</a></li>
-        </ul>
-    </nav>
-</div>
+/* 🔹 Header Styling */
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
 
-<style>
-/* 🔹 Header Styles */
-.header {
-    width: 100%;
-    background-color: #3c3d3f;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
+        .header a {
+            color: #ffcc00;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: 0.3s ease-in-out;
+        }
 
-.header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+        .header a:hover {
+            color: gold;
+            text-shadow: 0px 0px 10px rgba(255, 223, 0, 1);
+        }
 
-.header nav ul li {
-    display: inline;
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
-}
-
-.header nav ul li a:hover {
-    color: #ffcc00;
-}
-</style>
+        /* 🔹 Header Links */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
