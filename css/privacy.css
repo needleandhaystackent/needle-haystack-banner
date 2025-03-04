@@ -1,1 +1,57 @@
+/* 🔹 Privacy Policy Styling */
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-color: #363739; /* Dark theme */
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent box */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    padding: 40px;
+}
+
+/* 🔹 Title */
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Section Titles */
+h2 {
+    font-size: 1.8rem;
+    color: #ffdd44;
+    text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
+    margin-top: 30px;
+}
+
+/* 🔹 Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* 🔹 Links */
+a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(255, 223, 0, 1);
+}
