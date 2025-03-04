@@ -72,16 +72,17 @@ p {
     line-height: 1.6;
 }
 
-/* 🔹 Two Columns - Same Size */
+/* 🔹 Two Columns - Same Height */
 .columns {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: stretch; /* Ensures both columns stretch to the same height */
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
+/* 🔹 Make Both Boxes the Same Size */
 .column {
     flex: 1;
     background: rgba(255, 255, 255, 0.1);
@@ -93,7 +94,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensures both are same height */
+    height: 100%; /* Ensures both boxes are the same height */
 }
 
 /* 🔹 Headings */
