@@ -1,4 +1,3 @@
-/* 🔹 About Us Page Styling */
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -9,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* 🔹 Container for Page Content */
 .container {
     max-width: 1200px;
     margin: auto;
@@ -17,20 +15,19 @@ body {
     text-align: center;
 }
 
-/* 🔹 Headings */
 h1 {
+    font-size: 2.5rem; /* Bigger text */
     color: #ffcc00;
     text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: #ffdd44;
-    text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
-    text-align: center;
+p {
+    font-size: 1.25rem; /* Bigger text */
+    line-height: 1.6;
 }
 
-/* 🔹 Two-Column Layout */
+/* 🔹 Two Columns - Same Size */
 .columns {
     display: flex;
     justify-content: space-between;
@@ -40,56 +37,80 @@ h2 {
     margin-top: 30px;
 }
 
-/* 🔹 Individual Column Boxes */
 .column {
     flex: 1;
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-    text-align: left;
-    min-width: 300px;
-}
-
-/* 🔹 Paragraph Styling */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* 🔹 Centering the Call-to-Action Buttons */
-.button-container {
+    text-align: center;
+    min-width: 350px;
     display: flex;
-    justify-content: center; /* Centers the button inside the container */
-    width: 100%;
-    margin-top: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures both are same height */
+}
+
+/* 🔹 Headings */
+h2 {
+    font-size: 2rem; /* Bigger heading */
+    color: #ffdd44;
+    text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
+    text-align: center;
+}
+
+/* 🔹 Align Buttons to Bottom */
+.button-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 🔹 Call-to-Action Buttons */
-.cta-button, .email-link {
+.cta-button,
+.email-link {
     background: #ffcc00;
     color: black;
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: bold;
-    padding: 12px 30px;
+    padding: 15px 35px;
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s ease;
-    display: inline-block; /* Ensures the button doesn't stretch */
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    width: 80%; /* Ensures buttons are same width */
+    max-width: 300px;
 }
 
-/* 🔹 Hover Effect */
-.cta-button:hover, .email-link:hover {
+/* 🔥 Hover Effect */
+.cta-button:hover,
+.email-link:hover {
     background: gold;
     box-shadow: 0px 0px 15px rgba(255, 223, 0, 1);
 }
 
-/* 🔹 Make Both Columns Equal Height */
-@media (min-width: 768px) {
-    .column {
-        min-height: 350px; /* Ensures both columns have the same height */
-        display: flex;
+/* 🔹 Make Sure Buttons Are on the Same Line */
+.columns {
+    align-items: stretch;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 768px) {
+    .columns {
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-button,
+    .email-link {
+        width: 100%;
     }
 }
