@@ -4,123 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Needle and Haystack Entertainment</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: 'Merriweather', serif;
-            text-align: center;
-            background-color: #363739;
-            color: white;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #ffcc00;
-            text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
-            margin-bottom: 20px;
-        }
-
-       <!-- 🔹 Load Header from header.html -->
-        <div id="header-placeholder"></div>
-        <script>
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("header-placeholder").innerHTML = data);
-        </script>
-
-        /* 🔹 Equal Column Heights */
-        .columns {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch; /* Makes both columns same height */
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-
-        .column {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-            text-align: center;
-            min-width: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensures buttons are aligned */
-        }
-
-        h2 {
-            color: #ffdd44;
-            text-shadow: 2px 2px 8px rgba(255, 223, 0, 0.8);
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* 🔹 Button Styling for BOTH Buttons */
-        .cta-button, .email-link {
-            background: #ffcc00;
-            color: black;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease-in-out;
-            display: inline-block;
-            box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
-            align-self: center; /* Ensures the button stays centered */
-        }
-
-        /* 🔥 Hover Effect for BOTH Buttons */
-        .cta-button:hover, .email-link:hover {
-            background: gold;
-            box-shadow: 0px 0px 20px rgba(255, 223, 0, 1);
-            transform: scale(1.05);
-        }
-
-        /* 🔹 Button Containers to Keep Buttons Centered */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-top: auto; /* Ensures buttons are at the bottom */
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
-    <!-- 🔹 Global Header (Added to Every Page) -->
-    <div class="header">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
+    <!-- 🔹 Load Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+    </script>
 
     <div class="container">
         <h1>About Needle and Haystack Entertainment</h1>
         <p>At <strong>Needle and Haystack Entertainment</strong>, we connect <strong>producers, filmmakers, and brands</strong> with top-tier talent—without the <strong>Hollywood price tag.</strong> Whether you're an <strong>aspiring star</strong> or a <strong>production team looking for the perfect fit</strong>, we’re here to make casting <strong>simple, affordable, and efficient.</strong></p>
 
         <div class="columns">
-            <!-- Left Side: Looking to Get Cast -->
+            <!-- Left Column: Looking to Get Cast -->
             <div class="column">
                 <h2>🎭 Looking to Get Cast?</h2>
                 <p>Want to be on <strong>TV, film, reality shows, or commercials</strong>? We work with <strong>up-and-coming talent</strong>, helping them get discovered by casting professionals.</p>
@@ -132,7 +33,7 @@
                 </div>
             </div>
 
-            <!-- Right Side: Looking to Hire Talent -->
+            <!-- Right Column: Looking to Hire Talent -->
             <div class="column">
                 <h2>🎬 Looking to Hire Talent?</h2>
                 <p>We help <strong>independent filmmakers, producers, and brands</strong> find the right talent—<strong>without breaking the bank.</strong></p>
