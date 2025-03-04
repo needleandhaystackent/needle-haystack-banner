@@ -21,7 +21,8 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%
     z-index: 1000;
     text-align: center;
 }
@@ -250,4 +251,9 @@ top: -30px;
     color: black;
     transform: translate(-50%, -50%) scale(1.1); /* ✅ Grows without moving */
     box-shadow: 0px 0px 30px rgba(255, 223, 0, 1);
+}
+/* Ensure Footer Also Stretches Full Width */
+.footer {
+    width: 100vw;
+    max-width: 100%;
 }
